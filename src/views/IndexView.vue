@@ -103,12 +103,12 @@ const departmentInfo = [
                     </div>
                 </div>
             </div>
-            <a>
+            <a href="https://danxi-dev.feishu.cn/wiki/wikcn6MwNEtwXvpMWyiQN5ViBrd">
                 <button class="px-5 py-2 text-xl hover:text-gray-500">
                     需求发布
                 </button>
             </a>
-            <a>
+            <a href="https://wenjuan.feishu.cn/m?t=sr1SBCxuxCBi-rn2r">
                 <button class="px-5 py-2 text-xl hover:text-gray-500">
                     招新问卷
                 </button>
