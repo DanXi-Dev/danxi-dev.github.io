@@ -1,9 +1,9 @@
 export default [
     {
-        text: 'Guide',
+        text: '侧栏的标题',
         items: [
-            { text: 'Introduction', link: '/introduction' },
-            { text: 'Getting Started', link: '/getting-started' },
+            { text: '一个超链接', link: '/introduction' },
+            { text: '另一个超链接', link: '/getting-started' },
         ]
     }
 ]

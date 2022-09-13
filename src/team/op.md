@@ -2,5 +2,4 @@
 layout: page
 ---
 
-<div class="text-xl">hehe</div>
-<div class="text-2xl">hehe</div>
+<h1>Community Operations</h1>
