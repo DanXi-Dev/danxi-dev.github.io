@@ -2,4 +2,4 @@
 layout: page
 ---
 
-<h1>Executive</h1>
+<h1>FDU Wiki</h1>

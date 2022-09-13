@@ -1,8 +1,8 @@
 export default [
-    { text: '东西', link: '/stuff' },
-    { text: '我们', link: '/team' },
+    { text: '项目', link: '/project' },
+    { text: '文档', link: '/doc' },
     {
-        text: '机构',
+        text: '部门',
         items: [
             { text: '常务部', link: '/team/exec' },
             { text: '开发部', link: '/team/dev' },
