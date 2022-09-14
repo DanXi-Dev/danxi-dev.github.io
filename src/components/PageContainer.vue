@@ -5,3 +5,13 @@
         </div>
     </div>
 </template>
+
+<style>
+h2 {
+    @apply text-4xl font-bold my-5;
+}
+
+p {
+    @apply text-2xl;
+}
+</style>
