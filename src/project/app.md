@@ -1,5 +1,10 @@
 ---
 layout: page
+sidebar: false
 ---
 
-<h1>DanXi App</h1>
+<script setup>
+import ProjectAppView from '../views/ProjectAppView.vue'
+</script>
+
+<ProjectAppView/>
