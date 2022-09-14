@@ -7,12 +7,12 @@ const product = [
             {
                 name: '旦夕 app',
                 slogan: '陪伴你的校园生活',
-                icon: 'assets/danke.svg',
+                icon: '/assets/app.webp',
                 nav: 'project/app'
             }, {
                 name: 'FDU Wiki',
-                slogan: '复旦生存指南',
-                icon: 'assets/danke.svg',
+                slogan: '复旦人的校园生存指南',
+                icon: '/assets/danke.svg',
                 nav: 'project/wiki'
             }
         ]
@@ -22,17 +22,17 @@ const product = [
             {
                 name: '旦夕树洞',
                 slogan: '洞见自我',
-                icon: 'assets/danke.svg',
+                icon: '/assets/treehole.svg',
                 nav: 'project/fduhole'
             }, {
                 name: '蛋壳课评',
                 slogan: '月旦雅评',
-                icon: 'assets/danke.svg',
+                icon: '/assets/danke.svg',
                 nav: 'project/danke'
             }, {
                 name: 'FDU-Hotpot',
                 slogan: '学长学姐助力的留学交流平台',
-                icon: 'assets/danke.svg',
+                icon: '/assets/hotpot.webp',
                 nav: 'project/hotpot'
             }
         ],
@@ -40,9 +40,9 @@ const product = [
         cat:
             '其他', prod: [
                 {
-                    name: '像素画 Canvas',
+                    name: '像素画',
                     slogan: '一周年纪念小游戏',
-                    icon: 'assets/danke.svg',
+                    icon: '/assets/canvas.ico',
                     nav: 'project/canvas'
                 }
             ]

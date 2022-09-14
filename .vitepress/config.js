@@ -8,6 +8,7 @@ export default defineConfig({
     title: '旦夕',
     titleTemplate: '旦夕',
     description: '旦夕团队 - 技术启明校园',
+    appearance: false,
     srcDir: 'src',
     cleanUrls: 'with-subfolders',
     outlineTitle: 'DANXI',

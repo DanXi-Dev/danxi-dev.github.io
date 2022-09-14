@@ -1,6 +1,4 @@
 <script setup>
-import { defineProps } from 'vue'
-
 const props = defineProps({
     name: {
         type: String,
@@ -18,7 +16,7 @@ const props = defineProps({
 </script>
         
 <template>
-    <div class="flex flex-wrap rounded-3xl p-3 bg-gray-50 hover:shadow-lg">
+    <div class="flex flex-wrap rounded-3xl p-3 bg-gray-50 hover:bg-gray-100">
         <img class="w-11 h-11 m-2 my-auto" :src="icon" :alt="name+': '+slogan">
         <div class="p-1">
             <div class="font-bold">{{name}}</div>
