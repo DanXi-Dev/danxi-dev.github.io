@@ -46,7 +46,7 @@ const departmentInfo = [
                 倍受信赖
             </h2>
             <p>
-                你的近 20,000 名同学都在使用
+                服务你的近 20,000 名同学
             </p>
             <div class="my-10 grid md:grid-cols-3 sm:grid-cols-1 gap-16">
                 <div v-for="i in userComment">
@@ -89,7 +89,7 @@ const departmentInfo = [
             <div class="my-10 grid md:grid-cols-3 sm:grid-cols-1 gap-5">
                 <div v-for="i in departmentInfo">
                     <div class="relative rounded-3xl bg-gray-800 text-gray-50 px-3 pt-7 pb-16 h-full">
-                        <div class="text-2xl">
+                        <div class="text-2xl font-bold">
                             {{i.name}}
                         </div>
                         <div class="mt-3">
@@ -121,10 +121,10 @@ const departmentInfo = [
                 保持联系
             </h2>
             <p>我们将在微信公众号上发布版本更新与活动公告，请关注我们</p>
-            <div class="mt-5 flex bg-gray-800 text-gray-50 h-48">
+            <div class="mt-5 flex bg-gray-800 text-gray-50 lg:h-64 h-28">
                 <img class="h-full" src="/assets/wechat.webp" alt="旦夕茶馆" />
-                <div class="my-auto p-4">
-                    <div class="text-2xl">旦夕茶馆</div>
+                <div class="my-auto pl-1">
+                    <div class="text-xl font-bold">旦夕茶馆</div>
                     <div class="flex flex-wrap">
                         <div>旦夕茶馆，</div>
                         <div>不定期开业！</div>

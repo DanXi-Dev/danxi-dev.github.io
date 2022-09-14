@@ -1,5 +1,5 @@
 export default [
-    { icon: 'github', link: 'https://github.com/DanXi-Dev' },
+    { icon: 'github', link: 'https://github.com/stars/KYLN24/lists/danxi' },
     // You can also add custom icons by passing SVG as string:
     {
         icon: {
