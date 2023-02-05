@@ -9,11 +9,11 @@ const product = [
                 slogan: '陪伴你的校园生活',
                 icon: '/assets/app.webp',
                 nav: '/project/app'
-            }, {
-                name: 'FDU Wiki',
-                slogan: '复旦人的校园生存指南',
-                icon: '/assets/danke.svg',
-                nav: '/project/wiki'
+                // }, {
+                //     name: 'FDU Wiki',
+                //     slogan: '复旦人的校园生存指南',
+                //     icon: '/assets/danke.svg',
+                //     nav: '/project/wiki'
             }
         ]
     },
@@ -36,15 +36,15 @@ const product = [
                 nav: '/project/hotpot'
             }
         ],
-    }, {
-        cat: '其他', prod: [
-            {
-                name: '像素画',
-                slogan: '一周年纪念小游戏',
-                icon: '/assets/canvas.ico',
-                nav: 'project/canvas'
-            }
-        ]
+        // }, {
+        //     cat: '其他', prod: [
+        //         {
+        //             name: '像素画',
+        //             slogan: '一周年纪念小游戏',
+        //             icon: '/assets/canvas.ico',
+        //             nav: 'project/canvas'
+        //         }
+        //     ]
     }
 ]
 </script>
@@ -55,7 +55,7 @@ const product = [
             项目
         </div>
         <div v-for="t in product">
-            <div class="text-xl font-bold mt-10 mb-5">{{t.cat}}</div>
+            <div class="text-xl font-bold mt-10 mb-5">{{ t.cat }}</div>
             <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5">
                 <a class="h-full" v-for=" i in t.prod" :href="i.nav">
                     <ProductCard v-bind="i" />
