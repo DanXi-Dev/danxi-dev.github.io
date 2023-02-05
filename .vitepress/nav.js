@@ -13,7 +13,7 @@ export default [
         text: '友情链接', items: [
             { text: 'DanXi-Dev', link: 'https://github.com/DanXi-Dev' },
             { text: 'OpenTreeHole', link: 'https://github.com/OpenTreeHole' },
-            { text: 'FDCraft | 复读世界𒆙', link: 'https://fdcraft.github.io' }
+            { text: 'FDCraft | 复读世界𒆙', link: 'https://fdcraft.top' }
         ]
     }
 ]
