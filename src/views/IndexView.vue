@@ -2,9 +2,9 @@
 import PageContainer from '../components/PageContainer.vue'
 import Saying from '../components/Saying.vue';
 const userComment = [
-    { name: '某20级本科用户', content: '在这种困难的抉择下，本人思来想去，寝食难安。我们都知道，只要有意义，那么就必须慎重考虑。生活的意义的发生，到底需要如何做到，不生活的意义的发生，又会如何产生。 无论如何，我们都知道，只要有意义，那么就必须慎重考虑。从这个角度来看，本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。' },
-    { name: '某21级本科用户', content: '经过上述讨论，这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。无论如何，生活的意义的发生，到底需要如何做到，不生活的意义的发生，又会如何产生。 冯学峰在不经意间这样说过，当一个人用工作去迎接光明，光明很快就会来照耀着他。这不禁令我深思。 ' },
-    { name: '某22级本科用户', content: '生活中，若生活的意义出现了，我们就不得不考虑它出现了的事实。 要想清楚，生活的意义，到底是一种怎么样的存在。 就我个人来说，生活的意义对我的意义，不能不说非常重大。 这样看来，了解清楚生活的意义到底是一种怎么样的存在，是解决一切问题的关键。' }
+    { name: '某旦夕树洞用户', content: '有了旦夕，我成功摆脱了响应极慢的小程序...尤其是复活码，体验极佳！无事氵树洞也是极好的！还能随时随地看课表~' },
+    { name: 'C.Yee, 20 级本科用户', content: '在旦夕树洞，我的亲身经历：你可以纾解胸中块垒，时而得到暖心回应，倾吐本身便有意义；你可能认识有趣的人，收获友谊甚至爱情，结局好坏依然感激；你还能分享经验兴趣，体会思想碰撞共鸣，闲时欢喜忙亦游戏。但无可避免争吵攻讦、杂糅信息，一千零一面镜子，也转映着你自己。整合分辨、平和自持，愿你尽同美好相遇。' },
+    { name: '某 21 级本科用户', content: '旦夕是什么？是整合信息的实时更新，是自校园树洞的自由开放，是的UI界面的不断美化，是实用功能的丰富完善，是运行管理的有条不紊。“可能是复旦最好的校园APP”' }
 ]
 
 const parterComment = [
@@ -16,10 +16,10 @@ const parterComment = [
         name: '慎，复旦大学文理学社社长',
         content: '很高兴与旦夕团队进行合作。在理念上，文理学社与旦夕都致力于校园公共空间、更好大学生活的可能的建设。很感谢旦夕在学社活动、招新等方面的宣传支持，也很高兴共同促成了蛋壳平台的建立。学社期待未来与旦夕一同更好为复旦的公共空间建设努力。'
     },
-    {
-        name: '复旦大学云聚社社长',
-        content: 'placeholder'
-    },
+    // {
+    //     name: '复旦大学云聚社社长',
+    //     content: 'placeholder'
+    // },
     {
         name: '复旦大学武术协会社长',
         content: '我们与旦夕偶然结缘，但合作的过程非常愉快。旦夕的工作人员效率很高，也很可爱，通过旦夕平台为我们的社团活动进行宣传，吸引了更多同学的参与，扩大了我们活动的影响力。祝旦夕越办越好，也希望我们未来的合作一切顺利！'
@@ -29,18 +29,18 @@ const parterComment = [
 const departmentInfo = [
     {
         name: '开发部',
-        desc: '开发东西的。当前年轻人买房的问题，既有途径的原因，也与政策有直接关系。',
-        nav: '/team/dev',
+        desc: '开发部开发部领导活跃于 GitHub 上的开源社区组织 DanXi-Dev 及 OpenTreeHole，负责团队各项产品的软件工程开发及系统运维等工作，积极探索新的业务，切实改善现有产品的稳定性与用户体验。',
+        nav: '/department/dev',
         email: 'dev@fduhole.com'
     }, {
         name: '社区运营部',
-        desc: '运营社区的。解决年轻人买房问题，既需要主体又需要比重更需要从根本上借鉴热点，疏导计划，只有这样，才能转变需要，才能考验阵地，树立空间。',
-        nav: '/team/op',
+        desc: '社区运营部负责团队运营的各大社区的活动策划与社区管理等工作，在团队运营的各大社区营造良好氛围、倡导积极向上的价值观、维护复旦大学学生的利益。',
+        nav: '/department/op',
         email: 'admin@fduhole.com'
     }, {
         name: '公关联络部',
-        desc: '公关联络的。年轻人买房发展不平衡的问题突出，实施需要尚未取得根本性突破，条件改革需要深化，情况需要提高，监测尚未得到很好解决。关键仍面临着新的机遇和挑战。',
-        nav: '/team/pr',
+        desc: '公关联络部负责团队的公共关系工作，塑造正面的团队形象，积极与用户交流，听取用户的意见，回应用户的疑问，定期向用户公开透明度报告。此外，公关联络部负责团队的对外联络工作，与合作伙伴积极交流沟通。',
+        nav: '/department/pr',
         email: 'pr@fduhole.com',
     }
 ]
@@ -51,12 +51,12 @@ const departmentInfo = [
         <!-- PAGE-1 USER -->
         <PageContainer class="bg-gray-800 text-gray-50">
             <h2>
-                倍受信赖
+                备受信赖
             </h2>
             <p>
                 服务你的近 20,000 名同学
             </p>
-            <div class="my-10 grid md:grid-cols-3 sm:grid-cols-1 gap-16">
+            <div class="my-10 max-w-prose m-auto">
                 <div v-for="i in userComment">
                     <Saying v-bind="i" />
                 </div>
@@ -80,8 +80,11 @@ const departmentInfo = [
             <p>
                 我们乐意与社团等学生组织做朋友
             </p>
-            <div class="my-10 max-w-prose m-auto" v-for="i in parterComment">
-                <Saying v-bind="i" />
+            <div class="my-10 grid md:grid-cols-3 sm:grid-cols-1 gap-16">
+                <div v-for="i in parterComment">
+                    <Saying v-bind="i" />
+                </div>
+
             </div>
         </PageContainer>
 
@@ -98,10 +101,10 @@ const departmentInfo = [
                 <div v-for="i in departmentInfo">
                     <div class="relative rounded-3xl bg-gray-800 text-gray-50 px-3 pt-7 pb-16 h-full">
                         <div class="text-2xl font-bold">
-                            {{i.name}}
+                            {{ i.name }}
                         </div>
                         <div class="mt-3">
-                            {{i.desc}}
+                            {{ i.desc }}
                         </div>
                         <a :href="i.nav" class="absolute bottom-4 right-4">
                             <button class="bg-gray-600 hover:bg-gray-500 rounded-full px-3 py-1 text-white">
@@ -142,8 +145,8 @@ const departmentInfo = [
             </div>
             <div class="mt-5">
                 <div class="flex flex-wrap" v-for="i in departmentInfo">
-                    <div class="font-bold w-24">{{i.name}}</div>
-                    <a :href="'mailto:'+i.email">{{i.email}}</a>
+                    <div class="font-bold w-24">{{ i.name }}</div>
+                    <a :href="'mailto:' + i.email">{{ i.email }}</a>
                 </div>
             </div>
         </PageContainer>
