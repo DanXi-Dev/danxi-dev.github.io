@@ -23,9 +23,9 @@ const integratedServices = [
 ]
 
 const userComment = [
-    { name: '某20级本科用户', content: '在这种困难的抉择下，本人思来想去，寝食难安。我们都知道，只要有意义，那么就必须慎重考虑。生活的意义的发生，到底需要如何做到，不生活的意义的发生，又会如何产生。 无论如何，我们都知道，只要有意义，那么就必须慎重考虑。从这个角度来看，本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。' },
-    { name: '某21级本科用户', content: '经过上述讨论，这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。无论如何，生活的意义的发生，到底需要如何做到，不生活的意义的发生，又会如何产生。 冯学峰在不经意间这样说过，当一个人用工作去迎接光明，光明很快就会来照耀着他。这不禁令我深思。 ' },
-    { name: '某22级本科用户', content: '生活中，若生活的意义出现了，我们就不得不考虑它出现了的事实。 要想清楚，生活的意义，到底是一种怎么样的存在。 就我个人来说，生活的意义对我的意义，不能不说非常重大。 这样看来，了解清楚生活的意义到底是一种怎么样的存在，是解决一切问题的关键。' }
+    { name: '某本科用户', content: '用上啦！目前体验很好，终于摆脱了ehall小程序😁' },
+    { name: '某20级本科用户', content: '这是要让ehall无地自容吗(꒪꒫꒪ )' },
+    { name: '某用户', content: '太美好了 希望有这样的平台很久了 感谢初创团队' }
 ]
 </script>
     
@@ -47,23 +47,13 @@ const userComment = [
         <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             <div class="flex flex-col items-center">
                 <img class="h-64" src="/assets/app-function-1.webp" alt="旦夕 app 功能 1" />
-                <div class="mt-5 text-3xl">大功能1</div>
-                <div class="mt-5 text-xl">大功能描述1</div>
+                <div class="mt-5 text-3xl">生活查询</div>
+                <div class="mt-5 text-xl">饭卡余额、寝室电量与刷段情况一目了然</div>
             </div>
             <div class="flex flex-col items-center">
                 <img class="h-64" src="/assets/app-function-2.webp" alt="旦夕 app 功能 2" />
-                <div class="mt-5 text-3xl">大功能2</div>
-                <div class="mt-5 text-xl">大功能描述2</div>
-            </div>
-            <div class="flex flex-col items-center">
-                <img class="h-64" src="/assets/app-function-3.webp" alt="旦夕 app 功能 3" />
-                <div class="mt-5 text-3xl">大功能3</div>
-                <div class="mt-5 text-xl">大功能描述3</div>
-            </div>
-            <div class="flex flex-col items-center">
-                <img class="h-64" src="/assets/app-function-4.webp" alt="旦夕 app 功能 4" />
-                <div class="mt-5 text-3xl">大功能4</div>
-                <div class="mt-5 text-xl">大功能描述4</div>
+                <div class="mt-5 text-3xl">学习助手</div>
+                <div class="mt-5 text-xl">考试时间与绩点一键了解，还有便捷的课表查询</div>
             </div>
         </div>
     </PageContainer>
@@ -72,34 +62,34 @@ const userComment = [
     <PageContainer>
         <div class="mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
             <div class="flex flex-col items-center">
+                <img class="h-28" src="/assets/app-function-3.webp" alt="旦夕 app 功能 8" />
+                <div class="mt-5 text-2xl">课程</div>
+                <div class="mt-5 text-lg">一键导出完整课表日程、下节提醒、自定义课表</div>
+            </div>
+            <div class="flex flex-col items-center">
+                <img class="h-28" src="/assets/app-function-4.webp" alt="旦夕 app 功能 8" />
+                <div class="mt-5 text-2xl">校车</div>
+                <div class="mt-5 text-lg">收发车时间立刻了解</div>
+            </div>
+            <div class="flex flex-col items-center">
                 <img class="h-28" src="/assets/app-function-5.webp" alt="旦夕 app 功能 5" />
-                <div class="mt-5 text-2xl">小功能1</div>
-                <div class="mt-5 text-lg">小功能描述1</div>
+                <div class="mt-5 text-2xl">空教室</div>
+                <div class="mt-5 text-lg">找一个自习好去处</div>
             </div>
             <div class="flex flex-col items-center">
                 <img class="h-28" src="/assets/app-function-6.webp" alt="旦夕 app 功能 6" />
-                <div class="mt-5 text-2xl">小功能2</div>
-                <div class="mt-5 text-lg">小功能描述2</div>
+                <div class="mt-5 text-2xl">图书馆人数</div>
+                <div class="mt-5 text-lg">可能是...自习的更好去处？</div>
             </div>
             <div class="flex flex-col items-center">
                 <img class="h-28" src="/assets/app-function-7.webp" alt="旦夕 app 功能 7" />
-                <div class="mt-5 text-2xl">小功能3</div>
-                <div class="mt-5 text-lg">小功能描述3</div>
+                <div class="mt-5 text-2xl">复旦生活码</div>
+                <div class="mt-5 text-lg">可在快捷菜单中打开</div>
             </div>
             <div class="flex flex-col items-center">
                 <img class="h-28" src="/assets/app-function-8.webp" alt="旦夕 app 功能 8" />
-                <div class="mt-5 text-2xl">小功能4</div>
-                <div class="mt-5 text-lg">小功能描述4</div>
-            </div>
-            <div class="flex flex-col items-center">
-                <img class="h-28" src="/assets/app-function-9.webp" alt="旦夕 app 功能 8" />
-                <div class="mt-5 text-2xl">小功能5</div>
-                <div class="mt-5 text-lg">小功能描述5</div>
-            </div>
-            <div class="flex flex-col items-center">
-                <img class="h-28" src="/assets/app-function-10.webp" alt="旦夕 app 功能 8" />
-                <div class="mt-5 text-2xl">小功能6</div>
-                <div class="mt-5 text-lg">小功能描述6</div>
+                <div class="mt-5 text-2xl">刷锻</div>
+                <div class="mt-5 text-lg">与体教部信息实时同步</div>
             </div>
         </div>
     </PageContainer>
