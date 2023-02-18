@@ -1,7 +1,10 @@
 ---
 layout: page
+sidebar: false
 ---
 
-<h1>DanKe Course Review</h1>
+<script setup>
+import ProjectDankeView from '../views/ProjectDankeView.vue'
+</script>
 
-To be finished...
+<ProjectDankeView/>

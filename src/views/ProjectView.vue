@@ -8,7 +8,7 @@ const product = [
                 name: '旦夕 App',
                 slogan: '陪伴你的校园生活',
                 icon: '/assets/app.webp',
-                nav: '/project/app'
+                nav: '/project/app',
                 // }, {
                 //     name: 'FDU Wiki',
                 //     slogan: '复旦人的校园生存指南',
@@ -23,17 +23,20 @@ const product = [
                 name: '旦夕树洞',
                 slogan: '洞见自我',
                 icon: '/assets/treehole.svg',
-                nav: '/project/fduhole'
+                // nav: '/project/fduhole'
+                nav: 'https://www.fduhole.com'
             }, {
                 name: '蛋壳课评',
                 slogan: '月旦雅评',
                 icon: '/assets/danke.svg',
-                nav: '/project/danke'
+                // nav: '/project/danke'
+                nav: 'https://danke.fduhole.com'
             }, {
                 name: 'FDU-Hotpot',
                 slogan: '学长学姐助力的留学交流平台',
                 icon: '/assets/hotpot.webp',
-                nav: '/project/hotpot'
+                // nav: '/project/hotpot'
+                nav: 'https://fdu-hotpot.top'
             }
         ],
         // }, {
@@ -66,5 +69,4 @@ const product = [
 </template>
 
 <style scoped>
-
 </style>
