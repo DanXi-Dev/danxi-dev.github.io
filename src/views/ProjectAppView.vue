@@ -1,24 +1,52 @@
 <script setup>
+import { ref } from 'vue'
 import PageContainer from '../components/PageContainer.vue'
 import ProductCard from '../components/ProductCard.vue'
 import Saying from '../components/Saying.vue'
+
+let showDownload = ref(false)
+
+const latestVersion = '1.3.11'
+
+const downloadList = [
+    {
+        platform: 'iOS / iPadOS / macOS (Apple Silicon)',
+        channel: 'AppStore',
+        link: 'https://apps.apple.com/cn/app/%E6%97%A6%E5%A4%95/id1568629997'
+    }, {
+        platform: 'Android',
+        channel: 'Download',
+        link: 'https://danxi.jingyijun.xyz:8443/DanXi-1.3.11-release.android.apk'
+    }, {
+        platform: 'Windows',
+        channel: 'GitHub Release',
+        link: 'https://github.com/DanXi-Dev/DanXi/releases/latest'
+    }, {
+        platform: 'Android FOSS',
+        channel: 'F-Droid',
+        link: 'https://f-droid.org/packages/io.github.danxi_dev.dan_xi/'
+    }
+]
 
 const integratedServices = [
     {
         name: '旦夕树洞',
         slogan: '洞见自我',
         icon: '/assets/treehole.svg',
-        nav: '/project/fduhole'
+        // nav: '/project/fduhole'
+        nav: 'https://www.fduhole.com'
     }, {
         name: '蛋壳课评',
         slogan: '月旦雅评',
         icon: '/assets/danke.svg',
-        nav: '/project/danke'
+        // nav: '/project/danke'
+        nav: 'https://danke.fduhole.com'
     }, {
         name: 'FDU-Hotpot',
         slogan: '学长学姐助力的留学交流平台',
         icon: '/assets/hotpot.webp',
-        nav: '/project/hotpot'
+        // nav: '/project/hotpot'
+        nav: 'https://fdu-hotpot.top'
     }
 ]
 
@@ -30,19 +58,35 @@ const userComment = [
 </script>
     
 <template>
-    <!-- PAGE-1 HERO -->
     <PageContainer>
+        <!-- PAGE-1 HERO -->
         <div class="text-center">
             <img class="h-64 mx-auto" src="/assets/app.webp" alt="旦夕 app logo" />
             <h1 class="mt-10 text-6xl font-bold">旦夕 App</h1>
             <div class="mt-5 text-3xl">陪伴你的校园生活</div>
-            <a href="/download"><button
-                    class="mt-5 rounded-2xl bg-gray-800 text-gray-50 px-5 py-2 hover:bg-gray-500 text-lg">下载</button></a>
+            <div>
+                <button class="mx-2 mt-5 rounded-2xl bg-gray-800 text-gray-50 px-5 py-2 hover:bg-gray-500 text-lg"
+                    @click="showDownload = !showDownload">下载</button>
+                <a href="https://github.com/DanXi-Dev/DanXi" target="_blank"><button
+                        class="mx-2 mt-5 rounded-2xl bg-gray-800 text-gray-50 px-5 py-2 hover:bg-gray-500 text-lg">GitHub</button></a>
+            </div>
+        </div>
+        <div class="p-5" v-show="showDownload">
+            <table class="m-auto">
+                <tr>
+                    <td class="px-5 font-bold">DanXi {{ latestVersion }}</td>
+                </tr>
+                <tr v-for="d in downloadList">
+                    <td class="px-5">{{ d.platform }}</td>
+                    <td class="px-5"><a class="font-semibold" :href="d.link">{{ d.channel }}</a></td>
+                </tr>
+            </table>
         </div>
     </PageContainer>
 
-    <!-- PAGE-2 BIG FUNCTION -->
+
     <PageContainer class="bg-gray-800 text-gray-50">
+        <!-- PAGE-2 BIG FUNCTION -->
         <p>丰富的功能，只为提供更多的方便</p>
         <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             <div class="flex flex-col items-center">
@@ -58,8 +102,9 @@ const userComment = [
         </div>
     </PageContainer>
 
-    <!-- PAGE-3 SMALL FUNCTION -->
+
     <PageContainer>
+        <!-- PAGE-3 SMALL FUNCTION -->
         <div class="mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
             <div class="flex flex-col items-center">
                 <img class="h-28" src="/assets/app-function-3.webp" alt="旦夕 app 功能 8" />
@@ -94,19 +139,21 @@ const userComment = [
         </div>
     </PageContainer>
 
-    <!-- PAGE-4 INTEGRATION -->
+
     <PageContainer class="bg-gray-50">
+        <!-- PAGE-4 INTEGRATION -->
         <h2>与其他项目集成</h2>
         <p>可以在一个 app 里便捷地访问树洞、课评等服务</p>
         <div class="mt-5 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5">
-            <a class="h-full" v-for=" i in integratedServices" :href="i.nav">
+            <a class="h-full" v-for="i in integratedServices" :href="i.nav">
                 <ProductCard v-bind="i" />
             </a>
         </div>
     </PageContainer>
 
-    <!-- PAGE-5 USER -->
+
     <PageContainer>
+        <!-- PAGE-5 USER -->
         <div class="my-10 grid md:grid-cols-3 sm:grid-cols-1 gap-16">
             <div v-for="i in userComment">
                 <Saying v-bind="i" />
@@ -114,8 +161,9 @@ const userComment = [
         </div>
     </PageContainer>
 
-    <!-- PAGE-6 DOC -->
+
     <PageContainer>
+        <!-- PAGE-6 DOC -->
         <a href="">
             <button class="px-5 py-2 text-xl hover:text-gray-500">
                 使用条款

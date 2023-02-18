@@ -29,7 +29,7 @@ const parterComment = [
 const departmentInfo = [
     {
         name: '开发部',
-        desc: '开发部开发部领导活跃于 GitHub 上的开源社区组织 DanXi-Dev 及 OpenTreeHole，负责团队各项产品的软件工程开发及系统运维等工作，积极探索新的业务，切实改善现有产品的稳定性与用户体验。',
+        desc: '开发部领导活跃于 GitHub 上的开源社区组织 DanXi-Dev 及 OpenTreeHole，负责团队各项产品的软件工程开发及系统运维等工作，积极探索新的业务，切实改善现有产品的稳定性与用户体验。',
         nav: '/department/dev',
         email: 'dev@fduhole.com'
     }, {
