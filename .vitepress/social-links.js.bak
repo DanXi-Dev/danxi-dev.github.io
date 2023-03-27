@@ -1,0 +1,11 @@
+export default [
+    { icon: 'github', link: 'https://github.com/stars/KYLN24/lists/danxi' },
+    { icon: 'wechat', link: 'http://weixin.qq.com/r/uh2DmznEHmRhrX3490io' }
+    // You can also add custom icons by passing SVG as string:
+    // {
+    //     icon: {
+    //         svg: ''
+    //     },
+    //     link: ''
+    // }
+]
