@@ -6,7 +6,8 @@ import Saying from '../components/Saying.vue'
 
 let showDownload = ref(false)
 
-const latestVersion = '1.3.11'
+const latestVersion = '1.3.13'
+const oldestVersion = '1.3.11'
 
 const downloadList = [
     {
@@ -16,7 +17,7 @@ const downloadList = [
     }, {
         platform: 'Android',
         channel: 'Download',
-        link: 'https://danxi.jingyijun.xyz:8443/DanXi-1.3.11-release.android.apk'
+        link: 'https://static.fduhole.com/danxi-latest.apk'
     }, {
         platform: 'Windows',
         channel: 'GitHub Release',
@@ -64,6 +65,9 @@ const userComment = [
             <img class="h-64 mx-auto" src="/assets/app.webp" alt="旦夕 app logo" />
             <h1 class="mt-10 text-6xl font-bold">旦夕 App</h1>
             <div class="mt-5 text-3xl">陪伴你的校园生活</div>
+            <div class="mt-1 text-sm text-gray-400">
+                <span>最新版: {{ latestVersion }}</span> <span>最低支持版本: {{ oldestVersion }}</span>
+            </div>
             <div>
                 <button class="mx-2 mt-5 rounded-2xl bg-gray-800 text-gray-50 px-5 py-2 hover:bg-gray-500 text-lg"
                     @click="showDownload = !showDownload">下载</button>
@@ -74,7 +78,7 @@ const userComment = [
         <div class="p-5" v-show="showDownload">
             <table class="m-auto">
                 <tr>
-                    <td class="px-5 font-bold">DanXi {{ latestVersion }}</td>
+                    <td class="px-5 font-bold">DanXi</td>
                 </tr>
                 <tr v-for="d in downloadList">
                     <td class="px-5">{{ d.platform }}</td>
@@ -84,64 +88,15 @@ const userComment = [
         </div>
     </PageContainer>
 
-
     <PageContainer class="bg-gray-800 text-gray-50">
-        <!-- PAGE-2 BIG FUNCTION -->
-        <p>丰富的功能，只为提供更多的方便</p>
-        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            <div class="flex flex-col items-center">
-                <img class="h-64" src="/assets/app-function-1.webp" alt="旦夕 app 功能 1" />
-                <div class="mt-5 text-3xl">生活查询</div>
-                <div class="mt-5 text-xl">饭卡余额、寝室电量与刷段情况一目了然</div>
-            </div>
-            <div class="flex flex-col items-center">
-                <img class="h-64" src="/assets/app-function-2.webp" alt="旦夕 app 功能 2" />
-                <div class="mt-5 text-3xl">学习助手</div>
-                <div class="mt-5 text-xl">考试时间与绩点一键了解，还有便捷的课表查询</div>
-            </div>
-        </div>
+        <!-- PAGE-3 INTEGRATION -->
+        <h2>校园服务</h2>
+        <p>校园卡余额、课表、考试、空教室、刷锻、入校权限、校车班次、寝室电量、图书馆人数、食堂排队、教务处通知、图书馆人数...</p>
+        <p>需要更多功能？欢迎 Feature Requests！</p>
     </PageContainer>
-
-
-    <PageContainer>
-        <!-- PAGE-3 SMALL FUNCTION -->
-        <div class="mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
-            <div class="flex flex-col items-center">
-                <img class="h-28" src="/assets/app-function-3.webp" alt="旦夕 app 功能 8" />
-                <div class="mt-5 text-2xl">课程</div>
-                <div class="mt-5 text-lg">一键导出完整课表日程、下节提醒、自定义课表</div>
-            </div>
-            <div class="flex flex-col items-center">
-                <img class="h-28" src="/assets/app-function-4.webp" alt="旦夕 app 功能 8" />
-                <div class="mt-5 text-2xl">校车</div>
-                <div class="mt-5 text-lg">收发车时间立刻了解</div>
-            </div>
-            <div class="flex flex-col items-center">
-                <img class="h-28" src="/assets/app-function-5.webp" alt="旦夕 app 功能 5" />
-                <div class="mt-5 text-2xl">空教室</div>
-                <div class="mt-5 text-lg">找一个自习好去处</div>
-            </div>
-            <div class="flex flex-col items-center">
-                <img class="h-28" src="/assets/app-function-6.webp" alt="旦夕 app 功能 6" />
-                <div class="mt-5 text-2xl">图书馆人数</div>
-                <div class="mt-5 text-lg">可能是...自习的更好去处？</div>
-            </div>
-            <div class="flex flex-col items-center">
-                <img class="h-28" src="/assets/app-function-7.webp" alt="旦夕 app 功能 7" />
-                <div class="mt-5 text-2xl">复旦生活码</div>
-                <div class="mt-5 text-lg">可在快捷菜单中打开</div>
-            </div>
-            <div class="flex flex-col items-center">
-                <img class="h-28" src="/assets/app-function-8.webp" alt="旦夕 app 功能 8" />
-                <div class="mt-5 text-2xl">刷锻</div>
-                <div class="mt-5 text-lg">与体教部信息实时同步</div>
-            </div>
-        </div>
-    </PageContainer>
-
 
     <PageContainer class="bg-gray-50">
-        <!-- PAGE-4 INTEGRATION -->
+        <!-- PAGE-3 INTEGRATION -->
         <h2>与其他项目集成</h2>
         <p>可以在一个 app 里便捷地访问树洞、课评等服务</p>
         <div class="mt-5 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5">
