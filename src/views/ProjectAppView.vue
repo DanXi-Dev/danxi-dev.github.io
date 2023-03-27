@@ -119,12 +119,12 @@ const userComment = [
 
     <PageContainer>
         <!-- PAGE-6 DOC -->
-        <a href="">
+        <a href="/doc/app-terms-and-condition">
             <button class="px-5 py-2 text-xl hover:text-gray-500">
                 使用条款
             </button>
         </a>
-        <a href="">
+        <a href="/doc/app-privacy">
             <button class="px-5 py-2 text-xl hover:text-gray-500">
                 隐私政策
             </button>
