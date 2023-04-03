@@ -1,6 +1,6 @@
 export default [
     { text: '项目', link: '/project' },
-    // { text: '文档', link: '/doc' },
+    { text: '文档', link: '/doc' },
     // {
     //     text: '部门',
     //     items: [

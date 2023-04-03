@@ -11,7 +11,13 @@ layout: doc
 
 ## 协议条款
 
-[社区公约、隐私政策、用户协议、蛋壳公约](https://www.fduhole.com/#/license)
+[旦夕社区服务使用协议](/doc/community-user-agreement)
+
+[旦夕社区服务隐私政策](/doc/community-privacy)
+
+[FDUHole 社区公约（第三版）](/doc/fduhole-community-convention)
+
+[蛋壳公约](/doc/danke-community-convention)
 
 [旦夕 App 用户协议](/doc/app-terms-and-condition)
 
