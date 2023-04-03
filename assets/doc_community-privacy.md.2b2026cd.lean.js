@@ -1,0 +1,1 @@
+import{_ as i,o as l,c as o,b as e}from"./app.8c6a446a.js";const k=JSON.parse('{"title":"旦夕社区服务隐私政策","description":"","frontmatter":{"layout":"doc"},"headers":[],"relativePath":"doc/community-privacy.md"}'),t={name:"doc/community-privacy.md"},c=e("",5),s=[c];function a(r,n,d,_,p,u){return l(),o("div",null,s)}const h=i(t,[["render",a]]);export{k as __pageData,h as default};
