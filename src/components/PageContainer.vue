@@ -6,7 +6,7 @@
     </div>
 </template>
 
-<style>
+<style scoped>
 h2 {
     @apply text-4xl font-bold my-5;
 }
