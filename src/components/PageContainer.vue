@@ -7,11 +7,18 @@
 </template>
 
 <style scoped>
-h2 {
+:deep() h2 {
     @apply text-4xl font-bold my-5;
+    /* font-size: 2.25rem; */
+    /* line-height: 2.5rem; */
+    /* font-weight: 700; */
+    /* margin-top: 1.25rem; */
+    /* margin-bottom: 1.25rem; */
 }
 
-p {
+:deep() p {
     @apply text-2xl;
+    /* font-size: 1.5rem;
+    line-height: 2rem; */
 }
 </style>
