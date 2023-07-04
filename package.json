@@ -1,21 +1,21 @@
 {
   "name": "danxi-website",
-  "description": "Official Website for DanXi Team and its products.",
+  "description": "Official Website for DanXi.",
   "repository": "git@github.com:DanXi-Dev/DanXi-Website",
   "author": "KYLN24 <1296845690@qq.com>",
-  "license": "MIT",
+  "license": "AGPL-3.0",
   "private": true,
   "scripts": {
     "d": "vitepress dev",
     "b": "vitepress build",
-    "s": "vitepress serve"
+    "r": "vitepress serve"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.4",
-    "vitepress": "^1.0.0-alpha.64",
-    "vue": "^3.2.47"
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.2",
+    "vitepress": "1.0.0-beta.5",
+    "vue": "^3.3.4"
   },
   "postcss": {
     "plugins": {
