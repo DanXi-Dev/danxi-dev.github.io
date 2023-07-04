@@ -1,0 +1,1 @@
+import{_ as a,o as e,c as r,N as t}from"./chunks/framework.6332030a.js";const f=JSON.parse('{"title":"旦夕隐私政策","description":"","frontmatter":{"layout":"doc"},"headers":[],"relativePath":"doc/app-privacy.md"}'),o={name:"doc/app-privacy.md"},p=t("",8),l=[p];function c(n,i,s,d,h,_){return e(),r("div",null,l)}const m=a(o,[["render",c]]);export{f as __pageData,m as default};
