@@ -37,6 +37,8 @@ layout: doc
 
 ## 透明度报告
 
+[旦夕用户隐私报告 2023 年上半年刊](https://danxi-dev.feishu.cn/file/PQmAbayRtoU6bCxQhlWcJANEn6d)
+
 [旦夕用户隐私报告 2022 年下半年刊](https://danxi-dev.feishu.cn/file/boxcnKNbTjbwrWFr4WK5iaAA0Qd)
 
 [旦夕用户隐私报告 2022 年上半年刊](https://danxi-dev.feishu.cn/file/boxcnuvAt5nr7zMw0tgbqTvd90e)
