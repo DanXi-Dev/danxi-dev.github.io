@@ -13,9 +13,6 @@ hero:
   - theme: alt
     text: 文档
     link: /doc
-  - theme: alt
-    text: 开发部
-    link: https://danxi.fduhole.com/docs
 features:
   - title: 校园服务
     details: 整合服务，沟通师生，尽绵薄之力为复旦同学提供学习生活上的各种便利
