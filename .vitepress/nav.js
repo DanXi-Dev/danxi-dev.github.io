@@ -2,6 +2,7 @@ export default [
     { text: '项目', link: '/project' },
     { text: '文档', link: '/doc' },
     { text: '开发部', link: 'https://danxi.fduhole.com/docs' },
+    // { text: '公关联络部', link: '/pr' },
     // {
     //     text: '部门',
     //     items: [
