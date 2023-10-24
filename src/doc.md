@@ -5,6 +5,8 @@ layout: doc
 
 [旦夕 App 宣传位申请操作指南](https://danxi-dev.feishu.cn/wiki/NfSfwq5I2izsbbkTcNdcnbgXnrf)
 
+[账户注销操作指南](/doc/delete-account)
+
 [旦夕网址导航](https://danxi-dev.feishu.cn/wiki/wikcntQ9NfyYwloCJZqNjbtOOBg)
 
 [常见问题 (FAQ)](https://danxi-dev.feishu.cn/wiki/wikcnrPPGDCiTODBYRkdwLlHH65)
