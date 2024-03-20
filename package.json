@@ -5,22 +5,24 @@
   "author": "KYLN24 <1296845690@qq.com>",
   "license": "AGPL-3.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "d": "vitepress dev",
     "b": "vitepress build",
     "r": "vitepress serve"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.27",
-    "tailwindcss": "^3.3.3",
-    "vitepress": "1.0.0-beta.5",
-    "vue": "^3.3.4"
+    "autoprefixer": "^10.4.18",
+    "postcss": "^8.4.37",
+    "tailwindcss": "^3.4.1",
+    "vitepress": "^1.0.0-rc.45",
+    "vue": "^3.4.21"
   },
   "postcss": {
     "plugins": {
       "autoprefixer": {},
       "tailwindcss": {}
     }
-  }
+  },
+  "packageManager": "pnpm@8.15.5+sha1.a58c038faac410c947dbdb93eb30994037d0fce2"
 }
