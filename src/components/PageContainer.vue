@@ -6,7 +6,7 @@
     </div>
 </template>
 
-<style scoped>
+<style module>
 :deep() h2 {
     @apply text-4xl font-bold my-5;
     /* font-size: 2.25rem; */
