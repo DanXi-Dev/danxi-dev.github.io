@@ -14,7 +14,7 @@ const props = defineProps(['name', 'content'])
     </div>
 </template>
 
-<style scoped>
+<style module>
 .saying::before {
     content: '“';
     font-size: 6rem;
