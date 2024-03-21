@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import PageContainer from '../components/PageContainer.vue'
 import Saying from '../components/Saying.vue';
 const userComment = [
@@ -22,21 +22,21 @@ const parterComment = [
     }
 ]
 
-// const departmentInfo = [
-//     {
-//         name: '开发部',
-//         desc: '开发部领导活跃于 GitHub 上的开源社区组织 DanXi-Dev 及 OpenTreeHole，负责团队各项产品的软件工程开发及系统运维等工作，积极探索新的业务，切实改善现有产品的稳定性与用户体验。',
-//         nav: '/department/dev'
-//     }, {
-//         name: '社区运营部',
-//         desc: '社区运营部负责团队运营的各大社区的活动策划与社区管理等工作，在团队运营的各大社区营造良好氛围、倡导积极向上的价值观、维护复旦大学学生的利益。',
-//         nav: '/department/op'
-//     }, {
-//         name: '公关联络部',
-//         desc: '公关联络部负责团队的公共关系工作，塑造正面的团队形象，积极与用户交流，听取用户的意见，回应用户的疑问，定期向用户公开透明度报告。此外，公关联络部负责团队的对外联络工作，与合作伙伴积极交流沟通。',
-//         nav: '/department/pr'
-//     }
-// ]
+const departmentInfo = [
+    {
+        name: '开发部',
+        desc: '开发部领导活跃于 GitHub 上的开源社区组织 DanXi-Dev 及 OpenTreeHole，负责团队各项产品的软件工程开发及系统运维等工作，积极探索新的业务，切实改善现有产品的稳定性与用户体验。',
+        nav: '/department/dev'
+    }, {
+        name: '社区运营部',
+        desc: '社区运营部负责团队运营的各大社区的活动策划与社区管理等工作，在团队运营的各大社区营造良好氛围、倡导积极向上的价值观、维护复旦大学学生的利益。',
+        nav: '/department/op'
+    }, {
+        name: '公关联络部',
+        desc: '公关联络部负责团队的公共关系工作，塑造正面的团队形象，积极与用户交流，听取用户的意见，回应用户的疑问，定期向用户公开透明度报告。此外，公关联络部负责团队的对外联络工作，与合作伙伴积极交流沟通。',
+        nav: '/department/pr'
+    }
+]
 
 const contactInfo = [
     {

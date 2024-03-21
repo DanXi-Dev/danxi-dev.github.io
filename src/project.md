@@ -3,7 +3,7 @@ layout: page
 sidebar: false
 ---
 
-<script setup>
+<script setup lang="ts">
 import ProjectView from './views/ProjectView.vue'
 </script>
 

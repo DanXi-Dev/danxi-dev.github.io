@@ -21,7 +21,7 @@ features:
   - title: 敢想敢做
     details: 100% 创意与热情驱动，不断将想法变为现实
 ---
-<!-- <script setup>
+<!-- <script setup lang="ts">
 import IndexView from "./views/IndexView.vue";
 </script>
 
