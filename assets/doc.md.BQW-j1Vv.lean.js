@@ -1,1 +1,0 @@
-import{_ as e,c as a,o as r,a2 as t}from"./chunks/framework.SMDo5f31.js";const _=JSON.parse('{"title":"文档","description":"","frontmatter":{"layout":"doc"},"headers":[],"relativePath":"doc.md","filePath":"doc.md"}'),n={name:"doc.md"},i=t("",23),o=[i];function c(p,d,h,f,l,s){return r(),a("div",null,o)}const u=e(n,[["render",c]]);export{_ as __pageData,u as default};
