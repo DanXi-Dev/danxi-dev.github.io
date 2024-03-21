@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue'
 import PageContainer from '../components/PageContainer.vue'
 import ProductCard from '../components/ProductCard.vue'

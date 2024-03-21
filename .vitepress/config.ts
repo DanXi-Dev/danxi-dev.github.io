@@ -10,8 +10,7 @@ export default defineConfig({
     description: '旦夕 - 技术启明校园',
     appearance: false,
     srcDir: 'src',
-    cleanUrls: 'with-subfolders',
-    outlineTitle: 'DANXI',
+    cleanUrls: true,
     themeConfig: {
         logo: '/assets/logo.svg',
         siteTitle: false,
