@@ -13,8 +13,8 @@ export default defineConfig({
     cleanUrls: 'with-subfolders',
     outlineTitle: 'DANXI',
     themeConfig: {
-        // logo: '/assets/logo.svg',
-        // siteTitle: false,
+        logo: '/assets/logo.svg',
+        siteTitle: false,
         nav,
         // sidebar,
         // socialLinks,

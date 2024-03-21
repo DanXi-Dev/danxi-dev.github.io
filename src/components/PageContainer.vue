@@ -7,7 +7,7 @@
 </template>
 
 <style module>
-:deep() h2 {
+h2 {
     @apply text-4xl font-bold my-5;
     /* font-size: 2.25rem; */
     /* line-height: 2.5rem; */
@@ -16,8 +16,8 @@
     /* margin-bottom: 1.25rem; */
 }
 
-:deep() p {
-    @apply text-2xl;
+p {
+    @apply text-lg;
     /* font-size: 1.5rem;
     line-height: 2rem; */
 }

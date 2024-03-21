@@ -63,7 +63,8 @@ const userComment = [
         <!-- PAGE-1 HERO -->
         <div class="text-center">
             <img class="h-64 mx-auto" src="/assets/app.webp" alt="旦夕 app logo" />
-            <h1 class="mt-10 text-6xl font-bold">旦夕 App</h1>
+            <!-- <h1 class="mt-10 text-6xl font-bold">旦夕 App</h1> -->
+            <h1 class="mt-10 text-6xl font-bold">FDU 校园助手</h1>
             <div class="mt-5 text-3xl">陪伴你的校园生活</div>
             <div class="mt-1 text-sm text-gray-400">
                 <span>最新版: {{ latestVersion }}</span> <span>最低支持版本: {{ oldestVersion }}</span>
@@ -92,10 +93,10 @@ const userComment = [
         <!-- PAGE-3 INTEGRATION -->
         <h2>校园服务</h2>
         <p>校园卡余额、课表、考试、空教室、刷锻、入校权限、校车班次、寝室电量、图书馆人数、食堂排队、教务处通知、图书馆人数...</p>
-        <p>需要更多功能？欢迎 Feature Requests！</p>
+        <p>需要更多功能？欢迎在 GitHub 上提交 Issue 和 Pull Request！</p>
     </PageContainer>
 
-    <PageContainer class="bg-gray-50">
+    <PageContainer class="bg-gray-50" v-if="false">
         <!-- PAGE-3 INTEGRATION -->
         <h2>与其他项目集成</h2>
         <p>可以在一个 app 里便捷地访问树洞、课评等服务</p>
@@ -107,7 +108,7 @@ const userComment = [
     </PageContainer>
 
 
-    <PageContainer>
+    <PageContainer v-if="false">
         <!-- PAGE-5 USER -->
         <div class="my-10 grid md:grid-cols-3 sm:grid-cols-1 gap-16">
             <div v-for="i in userComment">

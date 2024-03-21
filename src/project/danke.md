@@ -3,8 +3,12 @@ layout: page
 sidebar: false
 ---
 
-<script setup>
+<!-- <script setup>
 import ProjectDankeView from '../views/ProjectDankeView.vue'
 </script>
 
-<ProjectDankeView/>
+<ProjectDankeView/> -->
+
+<h1>DanKe</h1>
+
+To be finished...
