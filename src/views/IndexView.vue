@@ -22,21 +22,21 @@ const parterComment = [
     }
 ]
 
-const departmentInfo = [
-    {
-        name: '开发部',
-        desc: '开发部领导活跃于 GitHub 上的开源社区组织 DanXi-Dev 及 OpenTreeHole，负责团队各项产品的软件工程开发及系统运维等工作，积极探索新的业务，切实改善现有产品的稳定性与用户体验。',
-        nav: '/department/dev'
-    }, {
-        name: '社区运营部',
-        desc: '社区运营部负责团队运营的各大社区的活动策划与社区管理等工作，在团队运营的各大社区营造良好氛围、倡导积极向上的价值观、维护复旦大学学生的利益。',
-        nav: '/department/op'
-    }, {
-        name: '公关联络部',
-        desc: '公关联络部负责团队的公共关系工作，塑造正面的团队形象，积极与用户交流，听取用户的意见，回应用户的疑问，定期向用户公开透明度报告。此外，公关联络部负责团队的对外联络工作，与合作伙伴积极交流沟通。',
-        nav: '/department/pr'
-    }
-]
+// const departmentInfo = [
+//     {
+//         name: '开发部',
+//         desc: '开发部领导活跃于 GitHub 上的开源社区组织 DanXi-Dev 及 OpenTreeHole，负责团队各项产品的软件工程开发及系统运维等工作，积极探索新的业务，切实改善现有产品的稳定性与用户体验。',
+//         nav: '/department/dev'
+//     }, {
+//         name: '社区运营部',
+//         desc: '社区运营部负责团队运营的各大社区的活动策划与社区管理等工作，在团队运营的各大社区营造良好氛围、倡导积极向上的价值观、维护复旦大学学生的利益。',
+//         nav: '/department/op'
+//     }, {
+//         name: '公关联络部',
+//         desc: '公关联络部负责团队的公共关系工作，塑造正面的团队形象，积极与用户交流，听取用户的意见，回应用户的疑问，定期向用户公开透明度报告。此外，公关联络部负责团队的对外联络工作，与合作伙伴积极交流沟通。',
+//         nav: '/department/pr'
+//     }
+// ]
 
 const contactInfo = [
     {
@@ -70,7 +70,7 @@ const contactInfo = [
 <template>
     <div class="mt-10">
         <!-- PAGE-1 USER -->
-        <PageContainer class="bg-gray-800 text-gray-50">
+        <PageContainer class="bg-gray-800 text-gray-50" v-if="false">
             <h2>
                 备受信赖
             </h2>
@@ -83,25 +83,26 @@ const contactInfo = [
                 </div>
             </div>
 
-            <span class="px-5 py-2 text-xl sm:text-center">
+            <!-- <span class="px-5 py-2 text-xl sm:text-center">
                 日活约 9,000
             </span>
 
             <span class=" px-5 py-2 text-xl sm:text-center">
                 月活约 18,000
-            </span>
+            </span> -->
 
         </PageContainer>
 
         <!-- PAGE-2 PARTNER -->
-        <PageContainer>
+        <PageContainer class="bg-gray-800 text-gray-50" v-if="false">
             <h2>
                 合作交流
             </h2>
             <p>
                 我们乐意与社团等学生组织做朋友
             </p>
-            <div class="my-10 grid md:grid-cols-3 sm:grid-cols-1 gap-16">
+            <!-- <div class="my-10 grid md:grid-cols-3 sm:grid-cols-1 gap-16"> -->
+            <div class="my-10 max-w-prose m-auto">
                 <div v-for="i in parterComment">
                     <Saying v-bind="i" />
                 </div>
@@ -109,9 +110,8 @@ const contactInfo = [
             </div>
         </PageContainer>
 
-
         <!-- PAGE-3 MEMBER -->
-        <PageContainer class="bg-gray-100">
+        <PageContainer v-if="false">
             <h2>
                 加入我们
             </h2>
@@ -144,13 +144,13 @@ const contactInfo = [
         </PageContainer>
 
         <!-- PAGE-4 CONTACT -->
-        <PageContainer>
+        <PageContainer v-if="false">
             <h2>
                 保持联系
             </h2>
-            <p>我们将在微信公众号上发布版本更新与活动公告，请关注我们</p>
+            <p>我们将在微信公众号上发布最新消息，请关注我们</p>
             <div class="mt-5 flex bg-gray-800 text-gray-50 lg:h-64 h-28">
-                <img class="h-full" src="/assets/wechat.webp" alt="旦夕茶馆" />
+                <img class="h-full" src="/assets/wechat.webp" alt="旦夕茶馆微信公众号二维码" />
                 <div class="my-auto pl-1">
                     <div class="text-xl font-bold">旦夕茶馆</div>
                     <div class="flex flex-wrap">
@@ -173,3 +173,9 @@ const contactInfo = [
         <!-- <p>吐槽一下，为什么 VitePress 还不出正式版</p> -->
     </div>
 </template>
+
+<style module>
+h2 {
+    border-top: 0!important;
+}
+</style>

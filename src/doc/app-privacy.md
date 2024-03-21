@@ -2,7 +2,7 @@
 layout: doc
 ---
 
-# 旦夕隐私政策
+<!-- # 旦夕隐私政策
 
 旦夕App是一个面向复旦大学学生的第三方集成式校园服务平台，由旦夕 App 前端、复旦大学 UIS、FDU Hole 树洞平台构成。旦夕隐私政策由这三个部分的隐私政策构成。
 
@@ -16,4 +16,9 @@ layout: doc
 
 ## FDUHole 树洞平台
 
-旦夕提供对于匿名论坛 FDUHole 的访问。您的隐私数据由 FDUHole 按照[FDUHole 隐私政策](https://www.fduhole.com/#/licence)采集并使用。如果您不使用 FDU Hole 服务，则旦夕不会采集您的隐私数据。
+旦夕提供对于匿名论坛 FDUHole 的访问。您的隐私数据由 FDUHole 按照[FDUHole 隐私政策](https://www.fduhole.com/#/licence)采集并使用。如果您不使用 FDU Hole 服务，则旦夕不会采集您的隐私数据。 -->
+
+# FDU 校园助手隐私政策
+
+1. 校园信息都保存在本地，不以任何方式上传至第三方服务器。
+2. 开源软件，所有代码可审查。
