@@ -18,7 +18,7 @@ export default defineConfig({
         // sidebar,
         // socialLinks,
         footer: {
-            message: 'We\'re from <a href="https://www.fudan.edu.cn/" target="_blank">Fudan University</a>.<br/>本网站不涉及任何经营性业务 <a href="https://beian.miit.gov.cn/" target="_blank">沪ICP备2021032046号-3</a>',
+            message: 'We\'re from <a href="https://www.fudan.edu.cn/" target="_blank">Fudan University</a>.<br/>本网站不涉及任何经营性业务 <a href="https://beian.miit.gov.cn/" target="_blank">沪ICP备2021032046号-3</a> <a href="https://beian.mps.gov.cn/#/query/webSearch?code=31011002006420" rel="noreferrer" target="_blank">沪公网安备31011002006420</a>',
             copyright: 'Copyright © 2020 ~ present <a href="https://github.com/DanXi-Dev" target="_blank">DanXi-Dev</a> & <a href="https://github.com/OpenTreeHole" target="_blank">OpenTreeHole</a>. All Rights Reserved.'
         },
         docFooter: {
