@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import PageContainer from '../components/PageContainer.vue'
-import Saying from '../components/Saying.vue';
+import Saying from '../components/Saying.vue'
 const userComment = [
     { name: '某旦夕树洞用户', content: '有了旦夕，我成功摆脱了响应极慢的小程序...尤其是复活码，体验极佳！无事氵树洞也是极好的！还能随时随地看课表~' },
     { name: 'C.Yee, 20 级本科用户', content: '在旦夕树洞，我的亲身经历：你可以纾解胸中块垒，时而得到暖心回应，倾吐本身便有意义；你可能认识有趣的人，收获友谊甚至爱情，结局好坏依然感激；你还能分享经验兴趣，体会思想碰撞共鸣，闲时欢喜忙亦游戏。但无可避免争吵攻讦、杂糅信息，一千零一面镜子，也转映着你自己。整合分辨、平和自持，愿你尽同美好相遇。' },
@@ -176,6 +176,6 @@ const contactInfo = [
 
 <style module>
 h2 {
-    border-top: 0!important;
+    border-top: 0 !important;
 }
 </style>
