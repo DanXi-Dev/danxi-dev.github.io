@@ -9,23 +9,23 @@ layout: doc
 
 <!-- [旦夕网址导航](https://danxi-dev.feishu.cn/wiki/wikcntQ9NfyYwloCJZqNjbtOOBg) -->
 
-<!-- [常见问题 (FAQ)](https://danxi-dev.feishu.cn/wiki/wikcnrPPGDCiTODBYRkdwLlHH65) -->
+[常见问题 (FAQ)](https://danxi-dev.feishu.cn/wiki/wikcnrPPGDCiTODBYRkdwLlHH65)
 
 <!-- [旦夕团队招新](https://danxi-dev.feishu.cn/wiki/wikcn6MwNEtwXvpMWyiQN5ViBrd) -->
 
 ## 协议条款
 
-<!-- [旦夕社区服务使用协议](/doc/community-user-agreement)
-
-[旦夕社区服务隐私政策](/doc/community-privacy) -->
-
-[FDUHole 社区公约（第四版）](/doc/fduhole-community-convention)
-
-[蛋壳公约](/doc/danke-community-convention)
-
 [FDU 校园助手用户协议](/doc/app-terms-and-condition)
 
 [FDU 校园助手隐私政策](/doc/app-privacy)
+
+[旦夕社区服务使用协议](/doc/community-user-agreement)
+
+[旦夕社区服务隐私政策](/doc/community-privacy)
+
+[茶楼社区公约（第四版）](/doc/fduhole-community-convention)
+
+[蛋壳公约](/doc/danke-community-convention)
 
 ## 面试题分享
 
