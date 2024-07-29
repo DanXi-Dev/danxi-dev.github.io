@@ -1,9 +1,9 @@
 ---
 layout: doc
 ---
-<!-- # 文档 -->
+# 文档
 
-<!-- [旦夕 App 宣传位申请操作指南](https://danxi-dev.feishu.cn/wiki/NfSfwq5I2izsbbkTcNdcnbgXnrf) -->
+[校园助手 App 宣传位申请操作指南](https://danxi-dev.feishu.cn/wiki/NfSfwq5I2izsbbkTcNdcnbgXnrf)
 
 <!-- [账户注销操作指南](/doc/delete-account) -->
 
@@ -17,15 +17,11 @@ layout: doc
 
 <!-- [旦夕社区服务使用协议](/doc/community-user-agreement)
 
-[旦夕社区服务隐私政策](/doc/community-privacy)
+[旦夕社区服务隐私政策](/doc/community-privacy) -->
 
-[FDUHole 社区公约（第三版）](/doc/fduhole-community-convention)
+[FDUHole 社区公约（第四版）](/doc/fduhole-community-convention)
 
 [蛋壳公约](/doc/danke-community-convention)
-
-[旦夕 App 用户协议](/doc/app-terms-and-condition)
-
-[旦夕 App 隐私政策](/doc/app-privacy) -->
 
 [FDU 校园助手用户协议](/doc/app-terms-and-condition)
 
