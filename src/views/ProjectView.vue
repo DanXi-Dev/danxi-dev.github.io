@@ -5,8 +5,8 @@ const product = [
     {
         cat: '校园', prod: [
             {
-                // name: '旦夕 App',
-                name: 'FDU 校园助手',
+                // name: '旦挞 App',
+                name: '旦挞校园助手',
                 slogan: '陪伴你的校园生活',
                 icon: '/assets/app.webp',
                 nav: '/project/app',
@@ -21,7 +21,7 @@ const product = [
     // {
     //     cat: '社区', prod: [
     //         {
-    //             name: '旦夕树洞',
+    //             name: '旦挞茶楼',
     //             slogan: '洞见自我',
     //             icon: '/assets/treehole.svg',
     //             // nav: '/project/fduhole'

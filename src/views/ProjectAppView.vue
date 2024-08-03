@@ -31,7 +31,7 @@ const downloadList = [
 
 const integratedServices = [
     {
-        name: '旦夕茶楼',
+        name: '旦挞茶楼',
         slogan: '洞见自我',
         icon: '/assets/treehole.svg',
         // nav: '/project/fduhole'
@@ -62,9 +62,9 @@ const userComment = [
     <PageContainer>
         <!-- PAGE-1 HERO -->
         <div class="text-center">
-            <img class="h-64 mx-auto" src="/assets/app.webp" alt="旦夕 app logo" />
-            <!-- <h1 class="mt-10 text-6xl font-bold">旦夕 App</h1> -->
-            <h1 class="mt-10 text-6xl font-bold">FDU 校园助手</h1>
+            <img class="h-64 mx-auto" src="/assets/app.webp" alt="旦挞校园助手 logo" />
+            <!-- <h1 class="mt-10 text-6xl font-bold">旦挞校园助手</h1> -->
+            <h1 class="mt-10 text-6xl font-bold">旦挞校园助手</h1>
             <div class="mt-5 text-3xl">陪伴你的校园生活</div>
             <div class="mt-1 text-sm text-gray-400">
                 <span>最新版: {{ latestVersion }}</span> <span>最低支持版本: {{ oldestVersion }}</span>
@@ -79,7 +79,7 @@ const userComment = [
         <div class="p-5" v-show="showDownload">
             <table class="m-auto">
                 <tr>
-                    <td class="px-5 font-bold">DanXi</td>
+                    <td class="px-5 font-bold">Danta</td>
                 </tr>
                 <tr v-for="d in downloadList">
                     <td class="px-5">{{ d.platform }}</td>

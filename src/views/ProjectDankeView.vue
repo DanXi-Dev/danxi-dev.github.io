@@ -31,17 +31,17 @@ const userComment = [
     <PageContainer>
         <div class="mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
             <div class="flex flex-col items-center">
-                <img class="h-28" src="/assets/app-function-3.webp" alt="旦夕 app 功能 8" />
+                <img class="h-28" src="/assets/app-function-3.webp" alt="旦挞校园助手功能 8" />
                 <div class="mt-5 text-2xl">星级好课</div>
                 <div class="mt-5 text-lg">快来分享你的发现</div>
             </div>
             <div class="flex flex-col items-center">
-                <img class="h-28" src="/assets/app-function-4.webp" alt="旦夕 app 功能 8" />
+                <img class="h-28" src="/assets/app-function-4.webp" alt="旦挞校园助手功能 8" />
                 <div class="mt-5 text-2xl">课程风格</div>
                 <div class="mt-5 text-lg">选择轻松或是挑战自我</div>
             </div>
             <div class="flex flex-col items-center">
-                <img class="h-28" src="/assets/app-function-5.webp" alt="旦夕 app 功能 5" />
+                <img class="h-28" src="/assets/app-function-5.webp" alt="旦挞校园助手功能 5" />
                 <div class="mt-5 text-2xl">课评互动</div>
                 <div class="mt-5 text-lg">支持或反对，表达你的观点</div>
             </div>
