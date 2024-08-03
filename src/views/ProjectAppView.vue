@@ -31,7 +31,7 @@ const downloadList = [
 
 const integratedServices = [
     {
-        name: '旦夕树洞',
+        name: '旦夕茶楼',
         slogan: '洞见自我',
         icon: '/assets/treehole.svg',
         // nav: '/project/fduhole'
@@ -99,7 +99,7 @@ const userComment = [
     <PageContainer class="bg-gray-50" v-if="false">
         <!-- PAGE-3 INTEGRATION -->
         <h2>与其他项目集成</h2>
-        <p>可以在一个 app 里便捷地访问树洞、课评等服务</p>
+        <p>可以在一个 app 里便捷地访问茶楼、课评等服务</p>
         <div class="mt-5 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5">
             <a class="h-full" v-for="i in integratedServices" :href="i.nav">
                 <ProductCard v-bind="i" />
