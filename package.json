@@ -1,7 +1,7 @@
 {
-  "name": "danxi-website",
-  "description": "Official Website for DanXi.",
-  "repository": "git@github.com:DanXi-Dev/DanXi-Website",
+  "name": "danta-website",
+  "description": "Official Website for Danta.",
+  "repository": "git@github.com:DanXi-Dev/danxi-dev.github.io",
   "author": "KYLN24 <1296845690@qq.com>",
   "license": "AGPL-3.0",
   "private": true,
