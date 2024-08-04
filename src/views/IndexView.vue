@@ -57,7 +57,7 @@ const contactInfo = [
     {
         name: '常务工作小组',
         desc: '综合事务',
-        email: 'danxi@danta.tech'
+        email: 'danta@danta.tech'
     },
     {
         name: '招新',
