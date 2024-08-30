@@ -7,7 +7,7 @@ export default defineConfig({
     lang: 'zh-CN',
     title: '旦挞',
     titleTemplate: '旦挞',
-    description: '旦挞 - 技术启明校园',
+    description: '旦挞 - 智慧点亮校园',
     appearance: false,
     srcDir: 'src',
     cleanUrls: true,

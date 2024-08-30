@@ -1,10 +1,10 @@
 ---
 layout: home
 title: '旦挞'
-titleTemplate: '技术启明校园'
+titleTemplate: '智慧点亮校园'
 hero:
   name: 旦挞
-  text: 技术启明校园
+  text: 智慧点亮校园
   tagline: 学术独立、思想自由、开源共享、无私奉献
   actions:
   - theme: brand
