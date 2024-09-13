@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as r,a2 as t}from"./chunks/framework.BR2CHYxx.js";const k=JSON.parse('{"title":"文档","description":"","frontmatter":{"layout":"doc"},"headers":[],"relativePath":"doc.md","filePath":"doc.md"}'),n={name:"doc.md"},i=t("",16),o=[i];function c(d,p,h,s,f,l){return r(),a("div",null,o)}const u=e(n,[["render",c]]);export{k as __pageData,u as default};
