@@ -5,9 +5,9 @@ import nav from './nav'
 
 export default defineConfig({
     lang: 'zh-CN',
-    title: '旦夕',
-    titleTemplate: '旦夕',
-    description: '旦夕 - 技术启明校园',
+    title: '旦挞',
+    titleTemplate: '旦挞',
+    description: '旦挞 - 智慧点亮校园',
     appearance: false,
     srcDir: 'src',
     cleanUrls: true,

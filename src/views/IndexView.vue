@@ -42,27 +42,27 @@ const contactInfo = [
     {
         name: '开发部',
         desc: '软件开发、技术支持、BUG 反馈、产品建议',
-        email: 'dev@fduhole.com'
+        email: 'dev@danta.tech'
     },
     {
         name: '社区运营部',
         desc: '公约咨询、违规处理、处罚申诉',
-        email: 'admin@fduhole.com'
+        email: 'admin@danta.tech'
     },
     {
         name: '公关联络部',
         desc: '新闻公告、合作沟通、活动筹办',
-        email: 'pr@fduhole.com'
+        email: 'pr@danta.tech'
     },
     {
         name: '常务工作小组',
         desc: '综合事务',
-        email: 'danxi@fduhole.com'
+        email: 'danta@danta.tech'
     },
     {
         name: '招新',
         desc: '招新咨询',
-        email: 'hr@fduhole.com'
+        email: 'hr@danta.tech'
     },
 ]
 </script>
