@@ -6,8 +6,8 @@ import Saying from '../components/Saying.vue'
 
 let showDownload = ref(false)
 
-const latestVersion = '1.4.6'
-const oldestVersion = '1.4.5'
+const latestVersion = '1.4.7'
+const oldestVersion = '1.4.7'
 
 const downloadList = [
     {
