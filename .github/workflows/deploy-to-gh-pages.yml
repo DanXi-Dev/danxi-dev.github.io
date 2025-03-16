@@ -30,7 +30,7 @@ jobs:
   
       - name: Install Corepack
         # See: [actions/setup-node/issues/1222](https://github.com/actions/setup-node/issues/1222)
-        run: npm i -g --force corepack && corepack enable
+        run: npm i -g --force corepack && corepack enable && pnpm i
         shell: bash
 
       - name: Build
