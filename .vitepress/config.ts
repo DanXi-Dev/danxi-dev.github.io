@@ -25,5 +25,15 @@ export default defineConfig({
             prev: '上一页',
             next: '下一页'
         }
+    },
+    vite: {
+        server: {
+            proxy: {
+                "/api": {
+                    target: "https://anniversary.fduhole.com",
+                    changeOrigin: true
+                }
+            }
+        }
     }
 })
