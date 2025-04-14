@@ -10,6 +10,9 @@ hero:
   - theme: brand
     text: 项目
     link: /project
+  - theme: brand
+    text: 周年庆
+    link: /celebration
   - theme: alt
     text: 文档
     link: /doc
