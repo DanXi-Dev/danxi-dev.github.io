@@ -33,6 +33,11 @@ onMounted(() => {
 
 watch(src, () => console.log(src.value))
 
+const imgLoaded = ref(false)
+function imgLoad() {
+    imgLoaded.value = true
+}
+
 
 </script>
 
@@ -41,8 +46,11 @@ watch(src, () => console.log(src.value))
         <BlessingBar class="w-full h-10" />
         <div class=" grid grid-cols-2 grid-rows-3 gap-9 xl:grid-cols-3 xl:grid-rows-2 w-full relative"
             style="grid-template-rows: auto auto auto;">
+            <el-skeleton
+                class="xl:row-span-2 xl:col-span-1 col-span-2 row-span-1 xl:h-full w-full rounded-3xl bg-gray-100 shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out hover:cursor-pointer relative"
+                :loading="true" v-if="!imgLoaded"></el-skeleton>
             <img class="xl:row-span-2 xl:col-span-1 col-span-2 row-span-1 xl:h-full w-full rounded-3xl bg-gray-100 shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out hover:cursor-pointer relative"
-                @click="gamePage" :src="src">
+                @click="gamePage" :src="src" @load="imgLoad">
             </img>
             <img class="w-full rounded-3xl  shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out hover:cursor-pointer relative bg-gradient-to-tl from-cyan-200 to-blue-200"
                 src="/assets/letter.png.webp">
