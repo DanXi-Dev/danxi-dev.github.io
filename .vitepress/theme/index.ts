@@ -1,5 +1,7 @@
 import './main.css'
 import DefaultTheme from 'vitepress/theme'
+import 'element-plus/dist/index.css'
+import ElementPlus from 'element-plus'
 
 let customRoutes = [{
     "path": "/version",
@@ -32,6 +34,8 @@ export default {
                     return false
                 }
             }
+
+            app.use(ElementPlus)
         }
     }
 }
