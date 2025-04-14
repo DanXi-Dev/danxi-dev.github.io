@@ -13,7 +13,7 @@ const positionString = computed(() => {
 const stop = ref(false)
 
 
-const { isFetching, error, data } = useFetch(`/api/floors/${floorNumber}/_special?order_by=like&size=100&sort=asc&offset=0`).get().json()
+const { isFetching, error, data } = useFetch(`https://anniversary.fduhole.com/api/floors/${floorNumber}/_special?order_by=like&size=100&sort=asc&offset=0`).get().json()
 
 const messages: any = computed(() =>
     data.value?.map(item => ({
