@@ -9,7 +9,7 @@ const loading = ref(false)
 
 
 onMounted(async () => {
-    const { isFetching, error, data } = await useFetch(`/api/floors/${floorNumber}/_special?order_by=like&size=10&sort=asc&offset=${(page.value - 1) * 10}`).get().json()
+    const { isFetching, error, data } = await useFetch(`https://anniversary.fduhole.com/api/floors/${floorNumber}/_special?order_by=like&size=10&sort=asc&offset=${(page.value - 1) * 10}`).get().json()
     messages.value.push(... (data.value?.map(item => ({
         content: item.content,
         name: item.anonyname,
@@ -18,7 +18,7 @@ onMounted(async () => {
 
 async function load() {
     page.value += 1
-    const { isFetching, error, data } = await useFetch(`/api/floors/${floorNumber}/_special?order_by=like&size=10&sort=asc&offset=${(page.value - 1) * 10}`).get().json()
+    const { isFetching, error, data } = await useFetch(`https://anniversary.fduhole.com/api/floors/${floorNumber}/_special?order_by=like&size=10&sort=asc&offset=${(page.value - 1) * 10}`).get().json()
     messages.value.push(... (data.value?.map(item => ({
         content: item.content,
         name: item.anonyname,
