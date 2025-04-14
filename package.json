@@ -1,32 +1,32 @@
 {
-  "name": "danta-website",
-  "description": "Official Website for Danta.",
-  "repository": "git@github.com:DanXi-Dev/danxi-dev.github.io",
-  "author": "KYLN24 <1296845690@qq.com>",
-  "license": "AGPL-3.0",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "d": "vitepress dev",
-    "b": "vitepress build",
-    "r": "vitepress serve"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.3",
-    "tailwindcss": "^3.4.17",
-    "vitepress": "^1.6.3",
-    "vue": "^3.5.13"
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {},
-      "tailwindcss": {}
+    "name": "danta-website",
+    "description": "Official Website for Danta.",
+    "repository": "git@github.com:DanXi-Dev/danxi-dev.github.io",
+    "author": "KYLN24 <1296845690@qq.com>",
+    "license": "AGPL-3.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "d": "vitepress dev",
+        "b": "(vitepress build &) && sleep 30",
+        "r": "vitepress serve"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.21",
+        "postcss": "^8.5.3",
+        "tailwindcss": "^3.4.17",
+        "vitepress": "^1.6.3",
+        "vue": "^3.5.13"
+    },
+    "postcss": {
+        "plugins": {
+            "autoprefixer": {},
+            "tailwindcss": {}
+        }
+    },
+    "packageManager": "pnpm@8.15.5+sha1.a58c038faac410c947dbdb93eb30994037d0fce2",
+    "dependencies": {
+        "@vueuse/core": "^13.1.0",
+        "element-plus": "^2.9.7"
     }
-  },
-  "packageManager": "pnpm@8.15.5+sha1.a58c038faac410c947dbdb93eb30994037d0fce2",
-  "dependencies": {
-    "@vueuse/core": "^13.1.0",
-    "element-plus": "^2.9.7"
-  }
 }
