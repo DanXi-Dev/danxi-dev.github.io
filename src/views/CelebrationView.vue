@@ -53,7 +53,7 @@ function imgLoad() {
                 @click="gamePage" :src="src" @load="imgLoad">
             </img>
             <img class="w-full rounded-3xl  shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out hover:cursor-pointer relative bg-gradient-to-tl from-cyan-200 to-blue-200"
-                src="/assets/letter.png.webp">
+                src="/assets/letter.png.webp" @click="window.open('https://mp.weixin.qq.com/s/AQr2pBkC6c8QOevOkeIR4Q', '_blank')">
 
             </img>
             <img class="w-full  rounded-3xl  shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out hover:cursor-pointer relative bg-gradient-to-tl  from-sky-200 to-indigo-200 "
