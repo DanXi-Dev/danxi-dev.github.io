@@ -26,7 +26,7 @@ const interval = setInterval(() => {
         return
     }
     position.value -= 0.003
-    if (position.value > 100) {
+    if (position.value < -100) {
         position.value = 0
     }
 }, 10)
