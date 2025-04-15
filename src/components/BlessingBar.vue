@@ -25,7 +25,7 @@ const interval = setInterval(() => {
     if (stop.value) {
         return
     }
-    position.value -= 0.003
+    position.value -= 0.04
     if (position.value < -100) {
         position.value = 0
     }
