@@ -105,8 +105,7 @@ function goBack() {
             </div>
         </section>
 
-        <p class=" text-gray-500 text-sm font-thin mb-2">旦挞四周年文创美工制作：@MSapphire（伍芷萱） @masa（赵佳凝）
-            @vickyvia114（张文惠）
+        <p class=" text-gray-500 text-sm font-thin mb-2">旦挞四周年文创美工制作：@MSapphire @masa @vickyvia114 
         </p>
     </section>
 </template>
