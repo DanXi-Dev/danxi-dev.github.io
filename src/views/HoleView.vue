@@ -41,7 +41,7 @@ function goBack() {
 <template>
     <el-page-header @back="goBack" class="xl:w-2/3 m-auto w-full pl-10 pr-10 mt-2">
         <template #content>
-            <span class="text-large font-600 mr-3"> 树洞祝福 </span>
+            <span class="text-large font-600 mr-3"> 茶楼祝福 </span>
         </template>
         <template #title>
             <span class="text-large font-600 mr-3"> 返回 </span>
