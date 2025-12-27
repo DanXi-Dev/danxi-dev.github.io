@@ -1,141 +1,115 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
- 
-<svg
-   version="1.1"
-   id="svg2"
-   width="10000"  
-   height="1499.9999"
-   viewBox="1000 0 10000 1499.9999"  
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-   
-   <g
-      id="g8"
-      transform="matrix(0.31999998,0,0,0.31999998,0,5.6930664e-5)">
-      <g
-         id="g10">
-         <g
-            id="g12">
-            <g
-               id="g18"
-               transform="scale(3.125)">
-               <path
-                  d="M 0,0 H 8000 V 2000 H 0 Z"
-                  style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-                  id="path20" />
-            </g>
-         </g>
-      </g>
-      <g
-         id="g34">
-         <g
-            id="g36">
-            <g
-               id="g42"
-               transform="matrix(11.167361,0,0,11.167361,2500,26.057196)">
-               <text
-                  xml:space="preserve"
-                  transform="translate(0,416)"
-                  style="font-variant:normal;font-weight:bold;font-size:466.66px;font-family:AlegreyaSans;-inkscape-font-specification:AlegreyaSans-Bold;writing-mode:lr-tb;fill:#0e121b;fill-opacity:1;fill-rule:nonzero;stroke:none"
-                  id="text46"><tspan
-               x="50 405 655 935 1105"
-               y="-10"
-               id="tspan44">Danta</tspan></text>
-            </g>
-         </g>
-      </g>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="178.8pt" height="45.12pt" viewBox="0 0 178.8 45.12" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2025-12-27T13:34:53.916322</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 45.12 
+L 178.8 45.12 
+L 178.8 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="text_1">
+    <!-- Danta -->
+    <g transform="translate(-2.8875 44.60625) scale(0.72 -0.72)">
+     <defs>
+      <path id="FONTSPRINGDEMO-PGF-NowMediumRegular-44" d="M 1754 3968 
+L 256 3968 
+L 256 0 
+L 1696 0 
+C 3008 0 3872 749 3872 1990 
+C 3872 3181 3085 3968 1754 3968 
+z
+M 1107 666 
+L 1107 3309 
+L 1773 3309 
+C 2534 3315 3008 2803 3008 1984 
+C 3008 1171 2496 659 1677 666 
+L 1107 666 
+z
+" transform="scale(0.015625)"/>
+      <path id="FONTSPRINGDEMO-PGF-NowMediumRegular-61" d="M 2394 2624 
+L 2381 2618 
+C 2176 2912 1850 3066 1478 3066 
+C 634 3066 115 2419 115 1498 
+C 115 582 634 -64 1478 -64 
+C 1843 -64 2163 83 2374 371 
+L 2394 358 
+L 2394 0 
+L 3174 0 
+L 3174 3002 
+L 2394 3002 
+L 2394 2624 
+z
+M 1658 621 
+C 1222 621 890 947 890 1498 
+C 890 2048 1222 2374 1658 2374 
+C 1990 2374 2285 2189 2381 1811 
+L 2381 1190 
+C 2285 806 1990 621 1658 621 
+z
+" transform="scale(0.015625)"/>
+      <path id="FONTSPRINGDEMO-PGF-NowMediumRegular-6e" d="M 1946 3059 
+C 1530 3059 1184 2886 979 2573 
+L 979 3002 
+L 275 3002 
+L 275 0 
+L 1062 0 
+L 1062 1875 
+C 1171 2234 1453 2387 1722 2387 
+C 2086 2387 2304 2208 2298 1709 
+L 2298 0 
+L 3085 0 
+L 3085 1914 
+C 3085 2669 2650 3059 1946 3059 
+z
+" transform="scale(0.015625)"/>
+      <path id="FONTSPRINGDEMO-PGF-NowMediumRegular-74" d="M 1901 704 
+C 1824 659 1702 621 1613 621 
+C 1370 621 1274 730 1274 1114 
+L 1274 2323 
+L 2035 2323 
+L 2035 2963 
+L 1274 2963 
+L 1274 3597 
+L 1107 3597 
+L 32 2714 
+L 32 2323 
+L 480 2323 
+L 480 883 
+C 480 320 768 -64 1344 -64 
+C 1677 -64 1958 77 2074 186 
+L 1901 704 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#FONTSPRINGDEMO-PGF-NowMediumRegular-44"/>
+     <use xlink:href="#FONTSPRINGDEMO-PGF-NowMediumRegular-61" transform="translate(62.599991 0)"/>
+     <use xlink:href="#FONTSPRINGDEMO-PGF-NowMediumRegular-6e" transform="translate(116.199982 0)"/>
+     <use xlink:href="#FONTSPRINGDEMO-PGF-NowMediumRegular-74" transform="translate(168.899979 0)"/>
+     <use xlink:href="#FONTSPRINGDEMO-PGF-NowMediumRegular-61" transform="translate(203.099976 0)"/>
+    </g>
    </g>
+  </g>
+ </g>
 </svg>
-
-
-<!-- 
-<svg
-   version="1.1"
-   id="svg2"
-   width="10000"
-   height="1999.9999"
-   viewBox="0 0 6000 1999.9999"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-   <defs
-      id="defs6">
-      <clipPath
-         clipPathUnits="userSpaceOnUse"
-         id="clipPath16">
-         <path
-            d="M 0,0 H 25000 V 6250 H 0 Z"
-            clip-rule="evenodd"
-            id="path14" />
-      </clipPath>
-      <clipPath
-         clipPathUnits="userSpaceOnUse"
-         id="clipPath28">
-         <path
-            d="M 0,0 H 25000 V 6250 H 0 Z"
-            clip-rule="evenodd"
-            id="path26" />
-      </clipPath>
-      <clipPath
-         clipPathUnits="userSpaceOnUse"
-         id="clipPath40">
-         <path
-            d="M 0,0 H 25000 V 6250 H 0 Z"
-            clip-rule="evenodd"
-            id="path38" />
-      </clipPath>
-   </defs>
-   <g
-      id="g8"
-      transform="matrix(0.31999998,0,0,0.31999998,0,5.6930664e-5)">
-      <g
-         id="g10">
-         <g
-            id="g12"
-            clip-path="url(#clipPath16)">
-            <g
-               id="g18"
-               transform="scale(3.125)">
-               <path
-                  d="M 0,0 H 8000 V 2000 H 0 Z"
-                  style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-                  id="path20" />
-            </g>
-         </g>
-      </g>
-      <g
-         id="g22">
-         <g
-            id="g24"
-            clip-path="url(#clipPath28)">
-            <g
-               id="g30"
-               transform="scale(3.125)">
-               <path
-                  d="M 0,0 H 8000 V 2000 H 0 Z"
-                  style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-                  id="path32" />
-            </g>
-         </g>
-      </g>
-      <g
-         id="g34">
-      <g
-         id="g36"
-         clip-path="url(#clipPath40)">
-      <g
-         id="g42"
-         transform="matrix(11.167361,0,0,11.167361,5547.9224,26.057196)">
-         <text
-            xml:space="preserve"
-            transform="translate(0,416)"
-            style="font-variant:normal;font-weight:bold;font-size:466.66px;font-family:AlegreyaSans;-inkscape-font-specification:AlegreyaSans-Bold;writing-mode:lr-tb;fill:#0e121b;fill-opacity:1;fill-rule:nonzero;stroke:none"
-            id="text46"><tspan
-               x="0 327.12842 573.05823 841.38763 1020.5851"
-               y="0"
-               id="tspan44">Danta</tspan></text>
-      </g>
-      </g>
-      </g>
-   </g>
-</svg> -->
