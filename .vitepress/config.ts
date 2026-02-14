@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import Icons from 'unplugin-icons/vite'
 import nav from './nav'
 // import sidebar from './sidebar'
 // import socialLinks from './social-links'
@@ -27,6 +28,9 @@ export default defineConfig({
         }
     },
     vite: {
+        plugins: [
+            Icons({ compiler: 'vue3' })
+        ],
         server: {
             proxy: {
                 "/api": {
