@@ -6,7 +6,10 @@ import Saying from '../components/Saying.vue'
 import IconApple from '~icons/simple-icons/apple'
 import IconAndroid from '~icons/simple-icons/android'
 import IconWindows from '~icons/simple-icons/windows'
+import IconLinux from '~icons/simple-icons/linux'
+import IconArchLinux from '~icons/simple-icons/archlinux'
 import IconOSI from '~icons/simple-icons/opensourceinitiative'
+import IconGitHub from '~icons/simple-icons/github'
 
 let showDownload = ref(false)
 
@@ -27,8 +30,18 @@ const downloadList: { icons: Component[], platform: string, subtitle: string, li
     }, {
         icons: [IconWindows],
         platform: 'Windows',
-        subtitle: 'Download from GitHub Release',
+        subtitle: 'Download from GitHub Releases',
         link: 'https://github.com/DanXi-Dev/DanXi/releases/latest'
+    }, {
+        icons: [IconLinux],
+        platform: 'Linux Generic',
+        subtitle: 'Download from GitHub Releases',
+        link: 'https://github.com/DanXi-Dev/DanXi/releases/latest'
+    }, {
+        icons: [IconArchLinux],
+        platform: 'Arch Linux',
+        subtitle: 'Install from AUR',
+        link: 'https://aur.archlinux.org/packages/danxi'
     }, {
         icons: [IconAndroid, IconOSI],
         platform: 'Android FOSS',
@@ -78,10 +91,16 @@ const userComment = [
                 <span>最新版: {{ latestVersion }}</span> <span>最低支持版本: {{ oldestVersion }}</span>
             </div>
             <div>
-                <button class="mx-2 mt-5 rounded-2xl bg-gray-800 text-gray-50 px-5 py-2 hover:bg-gray-500 text-lg"
-                    @click="showDownload = !showDownload">下载</button>
+                <button class="mx-2 mt-5 rounded-2xl bg-gray-800 text-gray-50 px-5 py-2 hover:bg-gray-500 text-lg inline-flex items-center gap-2"
+                    @click="showDownload = !showDownload">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    下载
+                </button>
                 <a href="https://github.com/DanXi-Dev/DanXi" target="_blank"><button
-                        class="mx-2 mt-5 rounded-2xl bg-gray-800 text-gray-50 px-5 py-2 hover:bg-gray-500 text-lg">GitHub</button></a>
+                        class="mx-2 mt-5 rounded-2xl bg-gray-800 text-gray-50 px-5 py-2 hover:bg-gray-500 text-lg inline-flex items-center gap-2">
+                    <IconGitHub class="w-5 h-5" />
+                    GitHub
+                </button></a>
             </div>
         </div>
         <div class="mt-6 flex flex-col items-center gap-3 max-w-md mx-auto" v-show="showDownload">
