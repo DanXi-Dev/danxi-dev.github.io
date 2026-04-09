@@ -658,7 +658,8 @@ onMounted(() => {
   }
 
   .tab-bar {
-    margin: 0 1rem;
+    margin: 0 auto;
+    width: calc(100% - 2rem);
     gap: 0.15rem;
     padding: 0.5rem 0.5rem;
   }
