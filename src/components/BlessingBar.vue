@@ -32,7 +32,7 @@ const interval = setInterval(() => {
 }, 10)
 
 function toHole() {
-    window.location.href = "/celebration/hole"
+    window.location.href = "/anniversary/2025/hole"
 }
 
 

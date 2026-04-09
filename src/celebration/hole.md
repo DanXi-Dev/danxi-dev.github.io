@@ -4,7 +4,7 @@ sidebar: false
 ---
 
 <script setup lang="ts">
-import HoleView from '../views/HoleView.vue'
+if (typeof window !== 'undefined') {
+    window.location.replace('/anniversary/2025/hole')
+}
 </script>
-
-<HoleView />

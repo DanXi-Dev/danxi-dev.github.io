@@ -18,6 +18,15 @@ let customRoutes = [{
 }, {
     "path": "/about",
     "redirect": "/"
+}, {
+    "path": "/celebration",
+    "redirect": "/anniversary/2025"
+}, {
+    "path": "/celebration/gallery",
+    "redirect": "/anniversary/2025/gallery"
+}, {
+    "path": "/celebration/hole",
+    "redirect": "/anniversary/2025/hole"
 }]
 
 export default {

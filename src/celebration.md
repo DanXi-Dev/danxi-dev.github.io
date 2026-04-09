@@ -4,7 +4,7 @@ sidebar: false
 ---
 
 <script setup lang="ts">
-import CelebrationView from './views/CelebrationView.vue'
+if (typeof window !== 'undefined') {
+    window.location.replace('/anniversary/2025')
+}
 </script>
-
-<CelebrationView />
