@@ -4,14 +4,14 @@ import BlessingBar from '../components/BlessingBar.vue';
 
 function gamePage() {
     if (!window.matchMedia("(min-width: 768px)").matches) {
-        window.location.href = "/web-mobile/index.html"
+        window.location.href = "/anniversary/2025/web-mobile/index.html"
     } else {
-        window.location.href = "/web-desktop/index.html"
+        window.location.href = "/anniversary/2025/web-desktop/index.html"
     }
 }
 
 function holePage() {
-    window.location.href = "/celebration/hole"
+    window.location.href = "/anniversary/2025/hole"
 }
 
 function recruitPage() {
@@ -23,7 +23,7 @@ function officialAccountPage() {
 }
 
 function galleryPage() {
-    window.location.href = "/celebration/gallery"
+    window.location.href = "/anniversary/2025/gallery"
 }
 
 const src = ref("")

@@ -12,7 +12,7 @@ hero:
     link: /project
   - theme: brand
     text: 周年庆
-    link: /celebration
+    link: /anniversary/2026
   - theme: alt
     text: 文档
     link: /doc

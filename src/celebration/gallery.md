@@ -4,7 +4,7 @@ sidebar: false
 ---
 
 <script setup lang="ts">
-import GalleryView from '../views/GalleryView.vue'
+if (typeof window !== 'undefined') {
+    window.location.replace('/anniversary/2025/gallery')
+}
 </script>
-
-<GalleryView />
