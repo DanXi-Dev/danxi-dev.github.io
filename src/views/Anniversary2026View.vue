@@ -1,13 +1,12 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 
 // --- Tab state ---
 const activeTab = ref('game')
 const tabs = [
-  { key: 'game', label: '游戏' },
+  { key: 'game', label: '首页' },
   { key: 'letter', label: '信' },
   { key: 'gallery', label: '文创' },
-  { key: 'survey', label: '问卷' },
 ]
 
 // --- Game ---
@@ -152,22 +151,23 @@ onMounted(() => {
 
     <!-- Tab content -->
     <main class="tab-content">
-      <!-- ====== GAME ====== -->
-      <section v-if="activeTab === 'game'" class="panel panel-game">
-        <div class="game-hero" @click="playGame">
-          <img
-            src="/assets/game-2026-desktop.png"
-            alt="合成大猫猫"
-            class="game-hero-img"
-          />
-          <div class="game-hero-overlay">
-            <span class="game-hero-badge">合成大猫猫</span>
-            <p class="game-hero-cta">点击开始游玩</p>
+      <!-- ====== GAME + SURVEY ====== -->
+      <section v-if="activeTab === 'game'" class="panel panel-home">
+        <p class="home-greeting">感谢每一位茶友的陪伴，猫猫五岁啦！</p>
+        <div class="home-cards">
+          <div class="home-card" @click="playGame">
+            <span class="home-card-icon">&#127918;</span>
+            <h3 class="home-card-title">合成大猫猫</h3>
+            <p class="home-card-desc">五周年特别小游戏<br/>合成你的专属猫猫皇帝！</p>
+            <span class="home-card-link">开始游戏 &rarr;</span>
+          </div>
+          <div class="home-card" @click="openSurvey">
+            <span class="home-card-icon">&#128203;</span>
+            <h3 class="home-card-title">五周年问卷</h3>
+            <p class="home-card-desc">你的反馈是旦挞进步的动力<br/>问卷很短，只需几分钟～</p>
+            <span class="home-card-link">填写问卷 &rarr;</span>
           </div>
         </div>
-        <p class="game-caption">
-          五周年特别小游戏——合成你的专属猫猫皇帝！
-        </p>
       </section>
 
       <!-- ====== LETTER ====== -->
@@ -221,21 +221,8 @@ onMounted(() => {
             <span class="gallery-cell-name">{{ item.name }}</span>
           </div>
         </div>
-        <p class="gallery-credit">美工制作：蔡欣岚 · 伍芷萱 · 张文惠 · 幺一一</p>
       </section>
 
-      <!-- ====== SURVEY ====== -->
-      <section v-if="activeTab === 'survey'" class="panel panel-survey">
-        <div class="survey-card">
-          <div class="survey-icon">&#128203;</div>
-          <h2 class="survey-title">帮猫猫做个小调研吧</h2>
-          <p class="survey-desc">你的反馈是旦挞不断进步的动力～<br/>问卷很短，只需要几分钟！</p>
-          <button class="survey-btn" @click="openSurvey">
-            打开问卷
-            <span class="survey-btn-arrow">&rarr;</span>
-          </button>
-        </div>
-      </section>
     </main>
 
     <!-- Lightbox -->
@@ -316,12 +303,14 @@ onMounted(() => {
 }
 
 .header-title {
-  font-family: 'ZCOOL XiaoWei', serif;
+  font-family: 'Noto Serif SC', 'Songti SC', serif;
   font-size: clamp(2.2rem, 6vw, 3.6rem);
-  font-weight: 400;
+  font-weight: 600;
   color: var(--c-blossom-deep);
   letter-spacing: 0.15em;
+  line-height: 1.6;
   margin: 0;
+  overflow: visible;
   text-shadow: 0 2px 12px rgba(200, 107, 132, 0.18);
 }
 
@@ -400,71 +389,75 @@ onMounted(() => {
   }
 }
 
-/* ===== GAME PANEL ===== */
-.game-hero {
-  position: relative;
-  border-radius: 1.25rem;
-  overflow: hidden;
-  cursor: pointer;
-  max-width: 340px;
-  margin: 0 auto;
-  box-shadow:
-    0 8px 32px rgba(196, 107, 132, 0.18),
-    0 2px 8px rgba(0, 0, 0, 0.04);
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
-}
-
-.game-hero:hover {
-  transform: translateY(-6px) scale(1.01);
-  box-shadow:
-    0 16px 48px rgba(196, 107, 132, 0.28),
-    0 4px 12px rgba(0, 0, 0, 0.06);
-}
-
-.game-hero-img {
-  width: 100%;
-  display: block;
-}
-
-.game-hero-overlay {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  padding-bottom: 2rem;
-  background: linear-gradient(
-    to bottom,
-    transparent 40%,
-    rgba(60, 30, 40, 0.5)
-  );
-}
-
-.game-hero-badge {
-  background: rgba(255, 255, 255, 0.88);
-  color: var(--c-blossom-deep);
-  padding: 0.4rem 1.4rem;
-  border-radius: 999px;
+/* ===== HOME PANEL ===== */
+.home-greeting {
+  text-align: center;
   font-family: 'ZCOOL XiaoWei', serif;
   font-size: 1.05rem;
-  letter-spacing: 0.1em;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  color: var(--c-blossom-deep);
+  letter-spacing: 0.08em;
+  margin-bottom: 1.5rem;
+  opacity: 0.85;
 }
 
-.game-hero-cta {
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 0.85rem;
-  margin-top: 0.6rem;
-  letter-spacing: 0.15em;
+.home-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  max-width: 480px;
+  margin: 0 auto;
 }
 
-.game-caption {
+.home-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.75rem 1.25rem;
   text-align: center;
+  cursor: pointer;
+  border: 1px solid rgba(232, 160, 180, 0.15);
+  box-shadow: 0 4px 20px rgba(196, 107, 132, 0.08);
+  transition: all 0.3s ease;
+}
+
+.home-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(196, 107, 132, 0.18);
+  border-color: rgba(232, 160, 180, 0.3);
+}
+
+.home-card-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.home-card-title {
+  font-family: 'ZCOOL XiaoWei', serif;
+  font-size: 1.05rem;
+  color: var(--c-blossom-deep);
+  margin: 0 0 0.5rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+}
+
+.home-card-desc {
+  font-size: 0.82rem;
   color: var(--c-ink-light);
-  font-size: 0.9rem;
-  margin-top: 1.2rem;
-  opacity: 0.75;
+  line-height: 1.7;
+  margin: 0 0 1rem;
+}
+
+.home-card-link {
+  display: inline-block;
+  font-family: 'ZCOOL XiaoWei', serif;
+  font-size: 0.85rem;
+  color: var(--c-blossom-deep);
+  letter-spacing: 0.06em;
+  transition: letter-spacing 0.25s ease;
+}
+
+.home-card:hover .home-card-link {
+  letter-spacing: 0.15em;
 }
 
 /* ===== LETTER PANEL ===== */
@@ -604,68 +597,6 @@ onMounted(() => {
   opacity: 0.6;
 }
 
-/* ===== SURVEY PANEL ===== */
-.survey-card {
-  text-align: center;
-  background: white;
-  border-radius: 1.25rem;
-  padding: 3rem 2rem;
-  box-shadow: 0 8px 32px rgba(196, 107, 132, 0.08);
-  border: 1px solid rgba(232, 160, 180, 0.15);
-}
-
-.survey-icon {
-  font-size: 3rem;
-  margin-bottom: 0.75rem;
-}
-
-.survey-title {
-  font-family: 'ZCOOL XiaoWei', serif;
-  font-size: 1.4rem;
-  color: var(--c-blossom-deep);
-  margin: 0 0 0.75rem;
-  font-weight: 400;
-  letter-spacing: 0.08em;
-}
-
-.survey-desc {
-  font-size: 0.92rem;
-  color: var(--c-ink-light);
-  line-height: 1.7;
-  margin-bottom: 1.75rem;
-}
-
-.survey-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.75rem 2rem;
-  background: var(--c-blossom-deep);
-  color: white;
-  border: none;
-  border-radius: 999px;
-  font-family: 'ZCOOL XiaoWei', serif;
-  font-size: 1rem;
-  cursor: pointer;
-  letter-spacing: 0.1em;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 16px rgba(196, 107, 132, 0.25);
-}
-
-.survey-btn:hover {
-  background: #b5495b;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(196, 107, 132, 0.35);
-}
-
-.survey-btn-arrow {
-  transition: transform 0.25s ease;
-}
-
-.survey-btn:hover .survey-btn-arrow {
-  transform: translateX(4px);
-}
-
 /* ===== LIGHTBOX ===== */
 .lightbox {
   position: fixed;
@@ -755,12 +686,13 @@ onMounted(() => {
     gap: 0.75rem;
   }
 
-  .survey-card {
-    padding: 2rem 1.25rem;
+  .home-cards {
+    grid-template-columns: 1fr;
+    max-width: 320px;
   }
 
-  .game-hero {
-    max-width: 280px;
+  .home-card {
+    padding: 1.25rem 1rem;
   }
 }
 </style>
