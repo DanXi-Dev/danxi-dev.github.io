@@ -1,0 +1,1 @@
+function a(o){window.location.href=o}function t(){window.history.back()}function c(o,i){const n=!window.matchMedia("(min-width: 768px)").matches;window.location.href=n?o:i}export{c as a,t as b,a as g};
