@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
+import { galleryItems } from './anniversary2026GalleryData'
 
 // --- Tab state ---
 const activeTab = ref('game')
@@ -56,68 +57,6 @@ function spawnPetals() {
 
 // --- Gallery state ---
 const galleryCategory = ref('badges')
-const galleryItems: Record<string, { label: string; items: { src: string; name: string }[] }> = {
-  badges: {
-    label: '徽章',
-    items: [
-      { src: '/assets/gallery-2026/徽章-郁金香.webp', name: '郁金香' },
-      { src: '/assets/gallery-2026/徽章-玉兰.webp', name: '玉兰' },
-      { src: '/assets/gallery-2026/徽章-樱花.webp', name: '樱花' },
-      { src: '/assets/gallery-2026/徽章-山茶.webp', name: '山茶' },
-      { src: '/assets/gallery-2026/徽章-杜鹃.webp', name: '杜鹃' },
-    ],
-  },
-  cards: {
-    label: '透卡',
-    items: [
-      { src: '/assets/gallery-2026/透卡-玉兰.webp', name: '玉兰' },
-      { src: '/assets/gallery-2026/透卡-樱花.webp', name: '樱花' },
-    ],
-  },
-  charms: {
-    label: '挂件',
-    items: [
-      { src: '/assets/gallery-2026/挂件-围观.webp', name: '围观' },
-      { src: '/assets/gallery-2026/挂件-点赞.webp', name: '点赞' },
-      { src: '/assets/gallery-2026/挂件-干饭.webp', name: '干饭' },
-      { src: '/assets/gallery-2026/挂件-皇帝驾到.webp', name: '皇帝驾到' },
-      { src: '/assets/gallery-2026/挂件-敲木鱼.webp', name: '敲木鱼' },
-    ],
-  },
-  puzzle: {
-    label: '拼图',
-    items: [
-      { src: '/assets/gallery-2026/拼图-主图.webp', name: '拼图主图' },
-      { src: '/assets/gallery-2026/拼图-1.webp', name: '拼图分图 1' },
-      { src: '/assets/gallery-2026/拼图-2.webp', name: '拼图分图 2' },
-    ],
-  },
-  postcards: {
-    label: '明信片',
-    items: [
-      { src: '/assets/gallery-2026/明信片-1.webp', name: '明信片 1' },
-      { src: '/assets/gallery-2026/明信片-2.webp', name: '明信片 2' },
-      { src: '/assets/gallery-2026/明信片-3.webp', name: '明信片 3' },
-      { src: '/assets/gallery-2026/明信片-4.webp', name: '明信片 4' },
-      { src: '/assets/gallery-2026/明信片-5.webp', name: '明信片 5' },
-      { src: '/assets/gallery-2026/明信片-6.webp', name: '明信片 6' },
-      { src: '/assets/gallery-2026/明信片-7.webp', name: '明信片 7' },
-      { src: '/assets/gallery-2026/明信片-8.webp', name: '明信片 8' },
-      { src: '/assets/gallery-2026/明信片-9.webp', name: '明信片 9' },
-      { src: '/assets/gallery-2026/明信片-10.webp', name: '明信片 10' },
-      { src: '/assets/gallery-2026/明信片-11.webp', name: '明信片 11' },
-      { src: '/assets/gallery-2026/明信片-12.webp', name: '明信片 12' },
-      { src: '/assets/gallery-2026/明信片-款式7正面+基础背面.webp', name: '明信片款式 7 正背面' },
-    ],
-  },
-  others: {
-    label: '其他',
-    items: [
-      { src: '/assets/gallery-2026/礼品袋.webp', name: '礼品袋' },
-      { src: '/assets/gallery-2026/海报.webp', name: '海报' },
-    ],
-  },
-}
 
 // --- Lightbox ---
 const lightboxSrc = ref('')
