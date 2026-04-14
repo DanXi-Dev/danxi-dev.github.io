@@ -13,7 +13,7 @@ import IconGitHub from '~icons/simple-icons/github'
 
 let showDownload = ref(false)
 
-const latestVersion = '1.5.1'
+const latestVersion = '1.5.2'
 const oldestVersion = '1.5.0'
 
 const downloadList: { icons: Component[], platform: string, subtitle: string, link: string }[] = [
