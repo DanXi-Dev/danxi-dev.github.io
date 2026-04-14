@@ -178,7 +178,7 @@ onMounted(() => {
     <!-- Tab content -->
     <main class="tab-content">
       <!-- ====== GAME + SURVEY ====== -->
-      <section v-if="activeTab === 'game'" class="panel panel-home">
+      <section v-if="activeTab === 'game'" class="ann-panel panel-home">
         <p class="home-greeting">感谢每一位茶友的陪伴，猫猫五岁啦！</p>
         <div class="home-cards">
           <div class="home-card" @click="playGame">
@@ -197,7 +197,7 @@ onMounted(() => {
       </section>
 
       <!-- ====== LETTER ====== -->
-      <section v-if="activeTab === 'letter'" class="panel panel-letter">
+      <section v-if="activeTab === 'letter'" class="ann-panel panel-letter">
         <div class="letter-paper">
           <div class="letter-header-deco"></div>
           <h2 class="letter-title">致茶友们的一封信</h2>
@@ -224,7 +224,7 @@ onMounted(() => {
       </section>
 
       <!-- ====== GALLERY ====== -->
-      <section v-if="activeTab === 'gallery'" class="panel panel-gallery">
+      <section v-if="activeTab === 'gallery'" class="ann-panel panel-gallery">
         <div class="gallery-cats">
           <button
             v-for="(cat, key) in galleryItems"
@@ -400,7 +400,8 @@ onMounted(() => {
   padding: 0 1.25rem;
 }
 
-.panel {
+.ann-panel {
+  display: block;
   animation: panel-in 0.4s ease-out;
 }
 
