@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 import { galleryItems } from './anniversary2026GalleryData'
+import { letterGreeting2026, letterParagraphs2026, letterSignature2026, letterTitle2026 } from './anniversary2026LetterData'
+import { ROUTES } from '../config/routes'
+import { goToResponsivePage } from '../utils/navigation'
 
 // --- Tab state ---
 const activeTab = ref('game')
@@ -12,11 +15,7 @@ const tabs = [
 
 // --- Game ---
 function playGame() {
-  if (!window.matchMedia('(min-width: 768px)').matches) {
-    window.location.href = '/anniversary/2026/web-mobile/index.html'
-  } else {
-    window.location.href = '/anniversary/2026/web-desktop/index.html'
-  }
+  goToResponsivePage(ROUTES.anniversary2026.webMobile, ROUTES.anniversary2026.webDesktop)
 }
 
 // --- Survey ---
@@ -139,24 +138,12 @@ onMounted(() => {
       <section v-if="activeTab === 'letter'" class="ann-panel panel-letter">
         <div class="letter-paper">
           <div class="letter-header-deco"></div>
-          <h2 class="letter-title">致茶友们的一封信</h2>
+          <h2 class="letter-title">{{ letterTitle2026 }}</h2>
           <div class="letter-body">
-            <p class="letter-greeting">各位亲爱的茶友：</p>
-            <p>2021 年 4 月 15 日，在复旦园和煦的春风中，一只旦挞猫猫悄悄在校园的某个角落里破壳而出，并用代码为复旦大学的各位茶友搭建起一个小小的交流空间。转眼间，在各位茶友的陪伴下，这只可爱的猫猫迎来了五岁生日。</p>
-            <p>五年来，猫猫迎来了五万余位作客的茶友；人声鼎沸中，五百余万条消息在茶楼里留下回响。对于每一位造访的茶友来说，茶楼或许都有着属于自己的独特意义。</p>
-            <p>或许，你是茶楼的常客，每天造访已经成为习惯；或许，你心血来潮时会来听听最新校园奇谭。</p>
-            <p>或许，你最爱翻阅猫猫钦点的「#旦挞精选」；或许，你最关心的是茶楼顶上的公告栏。</p>
-            <p>或许，你热爱在茶楼激扬文字，是名副其实的「大水怪」；或许，你在默默潜水时注视着浪花有所感慨。</p>
-            <p>或许，茶楼是你茶余饭后的快乐来源；或许，茶楼是你深夜 emo 时的温暖港湾。</p>
-            <p>或许，茶楼是你分享生活智慧的闪耀平台；或许，茶楼是你手足无措时的智囊团。</p>
-            <p>或许，茶楼是你碰撞思维火花的试炼场；或许，茶楼是你寻找同好的朋友圈。</p>
-            <p>无论茶楼对大家来说意味着什么，旦挞猫猫都会感到非常欣慰！猫猫喜欢看到茶楼里热闹的样子，喜欢身边有熟客的陪伴，喜欢重逢阔别已久的面孔，也喜欢看到大家脸上的笑容！每当看到温馨和谐的茶楼，猫猫都会忍不住幸福地发眯起眼睛，发出咕噜咕噜的声音！（当然，猫猫最喜欢的是遵守规则、维护茶楼友好氛围的好孩子，对于不遵守规则的坏孩子猫猫也是不会客气的！）</p>
-            <p>茶楼的今天离不开各位茶友的踊跃参与，也离不开各位猫猫的饲养员——旦挞团队的辛勤付出。如今，旦挞团队已经有了 70 位成员。对于旦挞团队的各位成员来说，为各位茶友提供更好的服务是我们一直以来的追求。我们喜欢看到大家在 GitHub 仓库中点亮的星星，喜欢看到维护时大家表达的支持和鼓励；喜欢看到大家对猫猫表情包、红包封面、文创物料、推送文案的夸夸和热情，喜欢看到各个社团的联动申请；喜欢看到大家对卖萌的管理员表达的善意，也喜欢看到大家在站务区、QQ 群和邮件里对团队工作提出的真诚建议。如果你也希望成为一名饲养员，那么我们非常欢迎你的加入！</p>
-            <p>感谢各位茶友一直以来的支持，希望大家都能够常来坐坐，在茶楼收获更多快乐～猫猫会一直在茶楼里摇着尾巴等待你！</p>
+            <p class="letter-greeting">{{ letterGreeting2026 }}</p>
+            <p v-for="paragraph in letterParagraphs2026" :key="paragraph">{{ paragraph }}</p>
             <div class="letter-sig">
-              <p>旦挞团队</p>
-              <p>旦挞猫猫（爪印代）</p>
-              <p>2026 年 4 月 15 日</p>
+              <p v-for="item in letterSignature2026" :key="item">{{ item }}</p>
             </div>
           </div>
         </div>
@@ -205,6 +192,9 @@ onMounted(() => {
 </style>
 
 <style scoped>
+@import './galleryShared.css';
+@import './lightboxShared.css';
+
 /* ===== FOUNDATIONS ===== */
 .ann-root {
   --c-blossom: #e8a0b4;
@@ -216,6 +206,10 @@ onMounted(() => {
   --c-leaf: #8fb88c;
   --c-leaf-pale: #ddecd8;
   --c-cream: #fdf8f4;
+  --gallery-accent: var(--c-blossom);
+  --gallery-accent-strong: var(--c-blossom-deep);
+  --gallery-accent-bg: var(--c-blossom-wash);
+  --gallery-text: var(--c-ink-light);
 
   position: relative;
   min-height: 100vh;
@@ -490,129 +484,6 @@ onMounted(() => {
   font-size: 0.9rem;
 }
 
-/* ===== GALLERY PANEL ===== */
-.gallery-cats {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.gallery-cat-btn {
-  padding: 0.4rem 1.2rem;
-  border: 1px solid var(--c-blossom);
-  background: transparent;
-  color: var(--c-blossom-deep);
-  border-radius: 999px;
-  font-family: 'ZCOOL XiaoWei', serif;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: all 0.25s ease;
-  letter-spacing: 0.06em;
-}
-
-.gallery-cat-btn:hover {
-  background: var(--c-blossom-wash);
-}
-
-.gallery-cat-btn.active {
-  background: var(--c-blossom-deep);
-  color: white;
-  border-color: var(--c-blossom-deep);
-}
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 1rem;
-}
-
-.gallery-cell {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  transition: transform 0.25s ease;
-}
-
-.gallery-cell:hover {
-  transform: scale(1.04);
-}
-
-.gallery-cell img {
-  width: 100%;
-  border-radius: 0.75rem;
-  background: white;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
-  border: 1px solid rgba(232, 160, 180, 0.12);
-}
-
-.gallery-cell-name {
-  font-size: 0.8rem;
-  color: var(--c-ink-light);
-  margin-top: 0.4rem;
-  letter-spacing: 0.04em;
-}
-
-.gallery-credit {
-  text-align: center;
-  font-size: 0.78rem;
-  color: var(--c-ink-light);
-  margin-top: 1.5rem;
-  opacity: 0.6;
-}
-
-/* ===== LIGHTBOX ===== */
-.lightbox {
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(4px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: lb-in 0.2s ease;
-  cursor: pointer;
-}
-
-@keyframes lb-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-.lightbox-img {
-  max-width: 90vw;
-  max-height: 85vh;
-  border-radius: 0.75rem;
-  box-shadow: 0 16px 64px rgba(0, 0, 0, 0.3);
-  cursor: default;
-}
-
-.lightbox-close {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  width: 2.5rem;
-  height: 2.5rem;
-  border: none;
-  background: rgba(255, 255, 255, 0.15);
-  color: white;
-  font-size: 1.5rem;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  backdrop-filter: blur(8px);
-  transition: background 0.2s;
-}
-
-.lightbox-close:hover {
-  background: rgba(255, 255, 255, 0.3);
-}
-
 /* ===== MOBILE ===== */
 @media (max-width: 640px) {
   .ann-header {
@@ -646,11 +517,6 @@ onMounted(() => {
 
   .letter-title {
     font-size: 1.25rem;
-  }
-
-  .gallery-grid {
-    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-    gap: 0.75rem;
   }
 
   .home-cards {

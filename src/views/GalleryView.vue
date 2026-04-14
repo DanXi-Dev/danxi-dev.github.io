@@ -1,7 +1,5 @@
 <script setup>
-function goBack() {
-    window.history.back()
-}
+import { goBack } from '../utils/navigation'
 </script>
 
 <template>

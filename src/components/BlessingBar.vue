@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue';
 import { useFetch } from '@vueuse/core';
+import { ROUTES } from '../config/routes';
+import { goTo } from '../utils/navigation';
 
 const floorNumber = 444012
 
@@ -32,7 +34,7 @@ const interval = setInterval(() => {
 }, 10)
 
 function toHole() {
-    window.location.href = "/anniversary/2025/hole"
+    goTo(ROUTES.anniversary2025.hole)
 }
 
 

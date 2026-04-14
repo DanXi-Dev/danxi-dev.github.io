@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { galleryItems } from './anniversary2026GalleryData'
+import { ROUTES } from '../config/routes'
+import { goTo } from '../utils/navigation'
 
 function goBack() {
-  window.location.href = '/anniversary/2026'
+  goTo(ROUTES.anniversary2026.base)
 }
 
 const galleryCategory = ref('badges')
@@ -66,126 +68,6 @@ function closeLightbox() {
 </template>
 
 <style scoped>
-.gallery-cats {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
-  flex-wrap: wrap;
-}
-
-.gallery-cat-btn {
-  padding: 0.4rem 1.2rem;
-  border: 1px solid #e8a0b4;
-  background: transparent;
-  color: #c46b84;
-  border-radius: 999px;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: all 0.25s ease;
-  letter-spacing: 0.06em;
-}
-
-.gallery-cat-btn:hover {
-  background: #fbe8ee;
-}
-
-.gallery-cat-btn.active {
-  background: #c46b84;
-  color: white;
-  border-color: #c46b84;
-}
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 1rem;
-}
-
-.gallery-cell {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  transition: transform 0.25s ease;
-}
-
-.gallery-cell:hover {
-  transform: scale(1.04);
-}
-
-.gallery-cell img {
-  width: 100%;
-  border-radius: 0.75rem;
-  background: white;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
-  border: 1px solid rgba(232, 160, 180, 0.12);
-}
-
-.gallery-cell-name {
-  font-size: 0.8rem;
-  color: #6b5a5a;
-  margin-top: 0.4rem;
-  letter-spacing: 0.04em;
-}
-
-.lightbox {
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(4px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: lb-in 0.2s ease;
-  cursor: pointer;
-}
-
-@keyframes lb-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.lightbox-img {
-  max-width: 90vw;
-  max-height: 85vh;
-  border-radius: 0.75rem;
-  box-shadow: 0 16px 64px rgba(0, 0, 0, 0.3);
-  cursor: default;
-}
-
-.lightbox-close {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  width: 2.5rem;
-  height: 2.5rem;
-  border: none;
-  background: rgba(255, 255, 255, 0.15);
-  color: white;
-  font-size: 1.5rem;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  backdrop-filter: blur(8px);
-  transition: background 0.2s;
-}
-
-.lightbox-close:hover {
-  background: rgba(255, 255, 255, 0.3);
-}
-
-@media (max-width: 640px) {
-  .gallery-grid {
-    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-    gap: 0.75rem;
-  }
-}
+@import './galleryShared.css';
+@import './lightboxShared.css';
 </style>

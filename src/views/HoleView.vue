@@ -1,6 +1,7 @@
 <script setup>
 import { onMounted, ref } from 'vue';
 import { useFetch, useDebounceFn } from '@vueuse/core';
+import { goBack } from '../utils/navigation';
 
 const floorNumber = 444012
 const messages = ref([])
@@ -32,9 +33,6 @@ const wrappedLoad = () => {
         loading.value = true
     }
     debouncedLoad()
-}
-function goBack() {
-    window.history.back()
 }
 </script>
 

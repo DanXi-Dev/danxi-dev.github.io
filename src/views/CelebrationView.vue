@@ -1,17 +1,15 @@
 <script setup lang="ts">
 import { ref, onMounted, watch } from 'vue';
 import BlessingBar from '../components/BlessingBar.vue';
+import { ROUTES } from '../config/routes';
+import { goTo, goToResponsivePage } from '../utils/navigation';
 
 function gamePage() {
-    if (!window.matchMedia("(min-width: 768px)").matches) {
-        window.location.href = "/anniversary/2025/web-mobile/index.html"
-    } else {
-        window.location.href = "/anniversary/2025/web-desktop/index.html"
-    }
+    goToResponsivePage(ROUTES.anniversary2025.webMobile, ROUTES.anniversary2025.webDesktop)
 }
 
 function holePage() {
-    window.location.href = "/anniversary/2025/hole"
+    goTo(ROUTES.anniversary2025.hole)
 }
 
 function recruitPage() {
@@ -23,7 +21,7 @@ function officialAccountPage() {
 }
 
 function galleryPage() {
-    window.location.href = "/anniversary/2025/gallery"
+    goTo(ROUTES.anniversary2025.gallery)
 }
 
 const src = ref("")
